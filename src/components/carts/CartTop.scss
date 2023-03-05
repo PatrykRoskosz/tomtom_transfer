@@ -1,0 +1,40 @@
+@use '../../styles/colors';
+.tomtom-cart-top {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 18%;
+	border-radius: 5px;
+	overflow: hidden;
+	box-shadow: 5px 5px 8px black;
+
+	.tomtom-cart-top-img {
+		width: 100%;
+		height: 180px;
+		img {
+			width: 100%;
+			height: 100%;
+		}
+	}
+	.tomtom-cart-top-text {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		padding: 10px;
+		background: colors.$grey;
+
+		h2 {
+			font-size: 20px;
+			padding: 10px 0;
+		}
+		p {
+			font-size: 16px;
+
+			padding: 10px 0;
+		}
+		button {
+			margin: 20px 0;
+		}
+	}
+}

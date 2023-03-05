@@ -1,0 +1,37 @@
+@use "../../styles/colors";
+footer {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 100%;
+	background: colors.$dark-gold;
+	color: colors.$light;
+	a {
+		text-decoration: none;
+		color: colors.$dark-gold;
+	}
+
+	.tomtom-footer-sections {
+		display: flex;
+		justify-content: center;
+		width: 100%;
+		section {
+			display: flex;
+			flex-direction: column;
+			align-items: flex-start;
+			justify-content: center;
+			margin-top: 20px;
+			padding: 20px 40px;
+			width: 40%;
+			line-height: 30px;
+			background: colors.$grey;
+			box-shadow: 3px 3px 8px colors.$dark;
+		}	
+	}
+    .tomtom-footer-info {
+        margin-top: 20px;
+        padding: 20px;
+        width: 80%;
+        border-top: 1px solid colors.$grey;
+    }
+}

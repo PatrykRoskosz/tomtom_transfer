@@ -1,0 +1,14 @@
+@use '../../styles/_colors.scss';
+.tomtom-button-one {
+	border-radius: 5px;
+	border: none;
+	padding: 10px 20px;
+	background: colors.$dark-gold;
+    color: colors.$light;
+    cursor: pointer;
+    transition: background .3s ;
+
+	&:hover {
+		background: rgb(112, 144, 240);
+	}
+}
