@@ -129,27 +129,34 @@ const Home = () => {
 					imgSrc={aboutUs.imgSrc}
 					imgAlt={aboutUs.imgAlt}
 				/>
-				<div className="tomtom-hero-image"></div>
+				<div className='tomtom-hero-image'></div>
 			</section>
-			
+
 			<section className='why-us'>
 				<h1>Dlaczego my</h1>
 				<ul>
 					{whyUs.map(card => (
-						<SmallCard key={card.id} title={card.title} text={card.text} />
+						<SmallCard
+							key={card.id}
+							title={card.title}
+							text={card.text}
+							bg='#b55400'
+						/>
 					))}
 				</ul>
 			</section>
-			<section className="our-cars">
+			<section className='our-cars'>
 				<h1>Nasze auta</h1>
 				<ul>
-					{cars.map(car => 	<CartSidePhoto
-					id={car.id}
-					title={car.title}
-					text={car.text}
-					imgSrc={car.imgSrc}
-					imgAlt={car.imgAlt}
-				/>)}
+					{cars.map(car => (
+						<CartSidePhoto
+							id={car.id}
+							title={car.title}
+							text={car.text}
+							imgSrc={car.imgSrc}
+							imgAlt={car.imgAlt}
+						/>
+					))}
 				</ul>
 			</section>
 		</section>

@@ -1,0 +1,23 @@
+@use "../../styles/colors";
+
+	
+   
+    .tomtom-section-our-cars {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background: colors.$grey;
+        h1 {
+            color: colors.$dark-gold;
+            padding: 30px;
+            font-size: 32px;
+        }
+        ul{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            }
+
+    }
+
+
