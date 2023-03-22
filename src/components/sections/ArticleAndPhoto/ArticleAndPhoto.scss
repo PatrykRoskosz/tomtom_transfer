@@ -1,0 +1,125 @@
+@use "src/styles/colors";
+@use "src/styles/vars";
+
+section .article-and-photo-wrapper {
+	display: flex;
+	flex-direction: row!important;
+	width: 100%;
+	height: 100vh;
+	max-height: 700px;
+	margin: 30px 0;
+	@media screen and (min-width: map-get(vars.$breakpoints, "medium")) {
+		width: 100%;
+		height: 80vh;
+	}
+	@media screen and (min-width: map-get(vars.$breakpoints, "large")) {
+		height: 90vh;
+		margin: 80px 0;
+	}
+
+	.article-and-photo-img-section {
+		width: 99%;
+		height: 100%;
+		padding-left: 0;
+		@media screen and (min-width: map-get(vars.$breakpoints, "medium")) {
+			width: 70%;
+			padding-left: 20px;
+		}
+
+		@media screen and (min-width: map-get(vars.$breakpoints, "large")) {
+			width: 45%;
+			padding-left: 60px;
+		}
+		img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
+	}
+	.article-and-photo-article-section {
+		position: relative;
+		width: 1%;
+		height: 100%;
+
+		@media screen and (min-width: map-get(vars.$breakpoints, "medium")) {
+			width: 30%;
+		}
+		@media screen and (min-width: map-get(vars.$breakpoints, "large")) {
+			width: 55%;
+		}
+
+		article {
+			position: absolute;
+			right: 10px;
+			top: 50%;
+			width: 95vw;
+			height: 80%;
+			padding: 10px 30px;
+			border: 3px solid colors.$light-100;
+			box-shadow: 0 0 10px colors.$light-100;
+			transform: translateY(-50%);
+			background: rgba($color: colors.$white, $alpha: 0.9);
+			overflow: scroll;
+			line-height: 20px;
+			z-index: 100;
+			p,
+			h1 {
+				padding: 0 0 30px 0;
+				text-align: justify;
+			}
+			p {
+				font-size: 12px;
+			}
+			h1 {
+				font-size: 22px;
+			}
+			@media screen and (min-width: map-get(vars.$breakpoints, "small")){
+				right: 30px;
+				width: 80vw;
+				line-height: 24px;
+				p {
+					font-size: 14px;
+				}
+				h1 {
+					font-size: 26px;
+				}
+				h1 {
+					padding: 0 0 50px 0;
+				}
+			}
+			@media screen and (min-width: map-get(vars.$breakpoints, "medium")){
+				right: 20px;
+				width: 60vw;
+				
+				background: rgba($color: colors.$white, $alpha: 1.0);
+				p {
+					font-size: 14px;
+				}
+				h1 {
+					font-size: 26px;
+				}
+				h1 {
+					padding: 0 0 50px 0;
+				}
+			}
+			@media screen and (min-width: map-get(vars.$breakpoints, "large")) {
+				width: 100%;
+				right: 60px;
+				top: 50%;
+				line-height: 36px;
+				padding: 20px 60px;
+				
+				p,
+				h1 {
+					padding: 0 0 60px 0;
+				}
+				p {
+					font-size: 16px;
+				}
+				h1 {
+					font-size: 32px;
+				}
+			}
+		}
+	}
+}

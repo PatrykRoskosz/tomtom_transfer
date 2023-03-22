@@ -5,13 +5,14 @@ import "./SmallCard.scss";
 interface smallCardType {
 	title: string;
 	text: string;
+	iconName?: string
 	color?: string;
 	bg?: string;
 	
 }
 
 const SmallCard: React.FC<smallCardType> = props => {
-	const { color, bg, title, text} = props;
+	const { color, bg, title, text, iconName} = props;
 	const cartColors = (color?: string, bg?: string) => {
 		if(color && bg) {
 			return {
@@ -34,8 +35,10 @@ const SmallCard: React.FC<smallCardType> = props => {
 
 	return (
 		<div className='tomtom-small-card' style={cartColors(color, bg)}>
+			{iconName && <i className={iconName}></i>}
 			<h3>{title}</h3>
 			<p>{text}</p>
+			
 		</div>
 	);
 };

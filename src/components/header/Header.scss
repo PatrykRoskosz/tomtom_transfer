@@ -5,17 +5,17 @@
     align-items: flex-start;
     justify-content: flex-end;
     width: 100vw;
-    height: 60vh;
+    height: 65vh;
+    max-height: 580px;
     background-image: url('../../images/headerPicture/busHeader.jpg');
     background-size: cover;
-    background-position: 0 -260px;
+    background-position: center;
     background-repeat: no-repeat;
 
     .tomtom-header-text {
         position: absolute;
         bottom: 20%;
         right: 20%;
-       
         text-align: center;
         color: whitesmoke;
 

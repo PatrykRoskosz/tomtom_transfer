@@ -3,14 +3,17 @@
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	width: 18%;
+	width: 280px;
 	border-radius: 5px;
 	overflow: hidden;
-	box-shadow: 5px 5px 8px black;
+	border: 1px solid colors.$light-100;
+	box-shadow: 0 0 10px colors.$light-100;
+	
 
 	.tomtom-cart-top-img {
 		width: 100%;
 		height: 180px;
+		// border: 1px solid colors.$white;
 		img {
 			width: 100%;
 			height: 100%;
@@ -22,7 +25,11 @@
 		justify-content: center;
 		align-items: center;
 		padding: 10px;
-		background: colors.$grey;
+		background: colors.$white;
+		border-bottom-left-radius: 5px;
+		border-bottom-right-radius: 5px;
+		
+		
 
 		h2 {
 			font-size: 20px;

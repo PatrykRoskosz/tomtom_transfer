@@ -4,10 +4,13 @@
 	padding: 0;
 	margin: 0;
 }
-// body {
-// 	background-color: colors.$dark;
-// 	color: colors.$light;
-// }
+body {
+	width: 100vw;
+	height: 100%;
+	background-color: colors.$white;
+	color: colors.$black;
+	// overflow: hidden;
+}
 .tomtom-hero-image {
 	position: absolute;
 	top: 0;

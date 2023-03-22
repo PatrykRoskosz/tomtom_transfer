@@ -1,5 +1,12 @@
+@use 'src/styles/vars';
+
 .wrapper {
 	display: flex;
 	justify-content: center;
 	width: 100vw;
+
+	@media screen and (min-width: map-get(vars.$breakpoints, 'large')) {
+		max-width: map-get(vars.$breakpoints, 'xl');
+		margin: 0 auto;
+	}
 }

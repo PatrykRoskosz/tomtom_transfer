@@ -9,7 +9,6 @@
 	box-shadow: 5px 5px 8px black;
 
 	.tomtom-cart-side-photo-img {
-		background: royalblue;
 		width: 40%;
 		img {
 			width: 100%;
@@ -23,19 +22,19 @@
 		flex-direction: column;
 		align-items: center;
 		width: 60%;
-		background: colors.$dark-gold;
+		background: colors.$primary-100;
 		h3 {
 			padding: 20px;
 			font-weight: bold;
-			color: colors.$grey;
+			color: colors.$light;
 		}
 		.tomtom-cart-side-photo-text-description {
 			display: flex;
 			width: 100%;
 			height: 100%;
 			padding: 10px 20px 10px 40px;
-			background: colors.$dark;
-			color: colors.$light;
+			background: colors.$light;
+			color: colors.$black;
 		}
 	}
 }

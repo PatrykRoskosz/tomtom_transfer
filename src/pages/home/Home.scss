@@ -1,11 +1,12 @@
 @use "../../styles/colors";
+@use "../../styles/vars";
 .home {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	width: 100%;
-	background: colors.$grey;
-	color: colors.$light;
+	
+	color: colors.$black;
 	h1 {
 		margin: 40px 2px 0;
 		padding: 20px 40px;
@@ -13,21 +14,21 @@
 		border-radius: 5px;
 		font-size: 34px;
 		letter-spacing: 2px;
-		color: colors.$light;
+		color: colors.$black;
 		// background: colors.$dark-gold;
 	}
-	section {
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		width: 100%;
-	}
-	section:nth-child(odd) {
-		background: colors.$dark;
-	}
-	section:nth-child(even) {
-		background: colors.$grey;
-	}
+	// section {
+	// 	display: flex;
+	// 	flex-direction: column;
+	// 	align-items: center;
+	// 	width: 100%;
+	// }
+	// section:nth-child(odd) {
+	// 	background: colors.$light;
+	// }
+	// section:nth-child(even) {
+	// 	background: colors.$white-100;
+	// }
 	p {
 		padding: 20px;
 	}
@@ -36,15 +37,14 @@
 		display: flex;
 		flex-direction: column;
 		align-items: center;
-		// padding: 20px 0;
-
+		
 		ul {
-			display: flex;
-			justify-content: space-around;
+			display: grid;
+			grid-template-columns: repeat(5, 1fr);
+			justify-items: center;
 			margin: 40px 0;
 			padding: 20px 0;
 			width: 100%;
-
 			text-align: center;
 		}
 	}
@@ -52,23 +52,27 @@
 		position: relative;
 		align-items: center;
 		justify-content: center;
-		height: 80vh;
-		background-image: url("../../images/cartTopPicture/auto.jpg");
-		background-size: cover;
-		background-position: center;
-		background-repeat: no-repeat;
+
+		// background-image: url("../../images/cartTopPicture/auto.jpg");
+		// background-size: cover;
+		// background-position: center;
+		// background-repeat: no-repeat;
 		z-index: 0;
-		h1 {
-			position: absolute;
-			top: -10px;
-		}
+		
 	}
 	.why-us {
+		width: 100%;
 		ul {
 			display: flex;
-			flex-direction: row;
-			justify-content: space-evenly;
+			flex-direction: column;
+			align-items: center;
+			width: 100%;
+		
 			padding: 80px 0;
+			@media screen and (min-width: map-get(vars.$breakpoints, "medium")) {
+				flex-direction: row;
+				justify-content: space-around;
+			}
 		}
 	}
 
@@ -78,6 +82,7 @@
 			flex-direction: column;
 			align-items: center;
 			padding: 20px 0;
+			
 		}
 	}
 }
