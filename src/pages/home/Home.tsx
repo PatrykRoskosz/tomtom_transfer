@@ -3,6 +3,7 @@ import CartSidePhoto from "../../components/carts/CartSidePhoto/CartSidePhoto";
 import kImg from "../../images/cartTopPicture/kopenhaga.jpg";
 import busImg from "../../images/cartTopPicture/auto.jpg";
 import SmallCard from "../../components/carts/SmallCard/SmallCard";
+import Components from "../../components";
 import "./Home.scss";
 
 const Home = () => {
@@ -120,17 +121,20 @@ const Home = () => {
 					))}
 				</ul>
 			</section>
-			<section className='about-us'>
-				<h1>O Nas</h1>
-				<CartSidePhoto
-					id={aboutUs.id}
-					title={aboutUs.title}
-					text={aboutUs.text}
-					imgSrc={aboutUs.imgSrc}
-					imgAlt={aboutUs.imgAlt}
+			
+				
+		
+
+				<Components.ArticleAndPhoto
+					title={"Onas"}
+					text={
+						"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam, enim molestiae provident repellat, praesentium nesciunt fuga, illo sequi architecto necessitatibus nulla delectus nostrum pariatur accusamus sit. Itaque accusantium eum ipsa harum animi. Officiis impedit quibusdam porro quis quos adipisci ut, dolores excepturi in quas eum, quod reiciendis deserunt? Optio possimus esse est neque quod ipsa assumenda vero ducimus, sapiente, magni blanditiis? Officia facere voluptates perferendis. Id corporis ducimus illo! Quaerat, sint ut nulla nostrum cum unde nisi tenetur corrupti doloribus reiciendis officiis quos nihil quae! Mollitia vero quae nesciunt doloremque, expedita, ex velit tempora, molestiae modi quidem sequi quaerat quasi."
+					}
+					imgSrc={busImg}
+					imgAlt={"auto"}
+					reverse={true}
 				/>
-				<div className='tomtom-hero-image'></div>
-			</section>
+		
 
 			<section className='why-us'>
 				<h1>Dlaczego my</h1>
@@ -140,7 +144,7 @@ const Home = () => {
 							key={card.id}
 							title={card.title}
 							text={card.text}
-							bg='#b55400'
+							bg='#395e95'
 						/>
 					))}
 				</ul>
