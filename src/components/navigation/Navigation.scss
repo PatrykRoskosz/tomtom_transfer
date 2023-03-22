@@ -1,15 +1,42 @@
 @use "../../styles/colors";
+@use "../../styles/vars";
 
 .tomtom-nav {
 	position: absolute;
-	flex-direction: column;
 	top: 0;
+	right: 0;
+	height: 100vh;
+	width: 90vw;
 	display: flex;
-	justify-content: center;
+	flex-direction: column;
+	justify-content: flex-start;
 	align-items: center;
-	width: 100%;
-	background-color: rgba($color: colors.$dark, $alpha: 0.2);
+	padding-right: 20px;
 	text-transform: uppercase;
+	background: #000;
+	z-index: 100;
+	@media screen and (min-width: map-get(vars.$breakpoints, "medium")) {
+		height: auto;
+		width: 100vw;
+		display: flex;
+		flex-direction: row;
+		justify-content: flex-end;
+		background: none;
+	}
+	i {
+		display: block;
+		position: absolute;
+		top: 0;
+		left: 0;
+		padding: 15px 30px;
+		font-size: 20px;
+		color: colors.$light;
+		cursor: pointer;
+		@media screen and (min-width: map-get(vars.$breakpoints, "medium")) {
+			display: none;
+		}
+	}
+
 	a {
 		text-decoration: none;
 		color: colors.$light;
@@ -17,62 +44,75 @@
 
 	ul {
 		display: flex;
+		flex-direction: column;
 		justify-content: space-around;
 		align-items: center;
-		width: 80%;
+		padding-top: 50px;
 		list-style: none;
-		background-color: rgba($color: colors.$grey, $alpha: 0.5);
+		@media screen and (min-width: map-get(vars.$breakpoints, "medium")) {
+			height: auto;
+			display: flex;
+			flex-direction: row;
+			justify-content: flex-end;
+			padding-top: 0;
+		}
 
 		li {
 			padding: 20px 10px;
 			transform: scale(1);
 
 			a {
-				padding: 10px 20px;
+				padding: 5px 10px;
 				text-decoration: none;
 				font-weight: bold;
-				font-size: 16px;
+				font-size: 14px;
 				letter-spacing: 2px;
 				transition: color 0.3s, font-size 0.3s;
 
 				&:hover {
-					color: colors.$dark-gold;
+					color: colors.$primary-100;
 				}
 				&.active {
-					font-size: 24px;
+					font-size: 20px;
 				}
 			}
 		}
 	}
-	.tomtom-nav-logo {
-		padding: 20px;
-	}
 	.btn-translate {
-		position: absolute;
-		top: 10px;
-		right: 10px;
+		position: relative;
 		padding: 10px 20px;
-		border: none;
+		margin-top: 20px;
+		margin-left: 10px;
+		border: 1px solid colors.$light;
 		border-radius: 5px;
 		font-size: 14px;
 		color: colors.$light;
-		background: colors.$dark-gold;
-		transition: all .3s;
+		background: none;
+		transition: all 0.3s;
 		cursor: pointer;
+		@media screen and (min-width: map-get(vars.$breakpoints, "medium")) {
+			margin-top: 0;
+			margin-left: 10px;
+		}
 		&:hover {
+			color: colors.$primary-100;
+			border: 1px solid colors.$primary-100;
 			transform: scale(1.1);
 		}
 		ul {
+			position: absolute;
+			top: -10%;
+			left: 0;
 			display: flex;
 			flex-direction: column;
 			justify-content: flex-start;
-			position: absolute;
-			top: 100%;
-			left: 0;
 			width: 100%;
 			border-radius: 5px;
 			overflow: hidden;
-			
+			@media screen and (min-width: map-get(vars.$breakpoints, "medium")) {
+				top: 120%;
+			}
+
 			li {
 				margin-bottom: 2px;
 				padding: 0;

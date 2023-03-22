@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 
-import { NavLink, Link } from "react-router-dom";
 
 import NavigationItem from "./NavigationItem";
 import "./Navigation.scss";
@@ -20,9 +19,7 @@ const Navigation = () => {
 
 	return (
 		<nav className='tomtom-nav'>
-			<Link to='/' className='tomtom-nav-logo'>
-				<h1>Tomtom Transfer</h1>
-			</Link>
+			<i className="fa-sharp fa-solid fa-xmark"></i>
 			<ul>
 				<NavigationItem />
 			</ul>
