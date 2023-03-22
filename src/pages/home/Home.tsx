@@ -62,16 +62,19 @@ const Home = () => {
 			id: 1,
 			title: "Bezpieczeństwo",
 			text: "Nie martw się podróą wsiądź i się odpręz my zadbamy o resztę",
+			iconName:"fa-solid fa-user-secret",
 		},
 		{
 			id: 2,
-			title: "Bezpieczeństwo",
+			title: "Punktualnośc",
 			text: "Nie martw się podróą wsiądź i się odpręz my zadbamy o resztę",
+			iconName:"fa-regular fa-clock",
 		},
 		{
 			id: 3,
-			title: "Bezpieczeństwo",
+			title: "Cena",
 			text: "Nie martw się podróą wsiądź i się odpręz my zadbamy o resztę",
+			iconName:"fa-sharp fa-solid fa-sack-dollar",
 		},
 	];
 
@@ -101,7 +104,7 @@ const Home = () => {
 
 	return (
 		<section className='home'>
-			<h1>Wyjazdy Polsk-Dania</h1>
+			{/* <h1>Wyjazdy Polsk-Dania</h1>
 			<p>
 				Wyjedź z nami do dani, wyślij paczkę wynajmij auto, lub wynajmij nas do
 				obsugi transportowej twojego wydarzenia
@@ -120,36 +123,36 @@ const Home = () => {
 						/>
 					))}
 				</ul>
-			</section>
-			
-				
-		
+			</section> */}
 
-				<Components.ArticleAndPhoto
-					title={"Onas"}
-					text={
-						"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam, enim molestiae provident repellat, praesentium nesciunt fuga, illo sequi architecto necessitatibus nulla delectus nostrum pariatur accusamus sit. Itaque accusantium eum ipsa harum animi. Officiis impedit quibusdam porro quis quos adipisci ut, dolores excepturi in quas eum, quod reiciendis deserunt? Optio possimus esse est neque quod ipsa assumenda vero ducimus, sapiente, magni blanditiis? Officia facere voluptates perferendis. Id corporis ducimus illo! Quaerat, sint ut nulla nostrum cum unde nisi tenetur corrupti doloribus reiciendis officiis quos nihil quae! Mollitia vero quae nesciunt doloremque, expedita, ex velit tempora, molestiae modi quidem sequi quaerat quasi."
-					}
-					imgSrc={busImg}
-					imgAlt={"auto"}
-					reverse={true}
-				/>
-		
+			
+			<Components.ArticleAndPhoto
+				title={"Onas"}
+				text={
+					"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam, enim molestiae provident repellat, praesentium nesciunt fuga, illo sequi architecto necessitatibus nulla delectus nostrum pariatur accusamus sit. Itaque accusantium eum ipsa harum animi. Officiis impedit quibusdam porro quis quos adipisci ut, dolores excepturi in quas eum, quod reiciendis deserunt? Optio possimus esse est neque quod ipsa assumenda vero ducimus, sapiente, magni blanditiis? Officia facere voluptates perferendis. Id corporis ducimus illo! Quaerat, sint ut nulla nostrum cum unde nisi tenetur corrupti doloribus reiciendis officiis quos nihil quae! Mollitia vero quae nesciunt doloremque, expedita, ex velit tempora, molestiae modi quidem sequi quaerat quasi."
+				}
+				imgSrc={busImg}
+				imgAlt={"auto"}
+				reverse={true}
+			/>
+			<Components.ServicesList />
 
 			<section className='why-us'>
 				<h1>Dlaczego my</h1>
 				<ul>
+				
 					{whyUs.map(card => (
 						<SmallCard
 							key={card.id}
 							title={card.title}
 							text={card.text}
-							bg='#395e95'
+							iconName={card.iconName}
+							
 						/>
 					))}
 				</ul>
 			</section>
-			<section className='our-cars'>
+			{/* <section className='our-cars'>
 				<h1>Nasze auta</h1>
 				<ul>
 					{cars.map(car => (
@@ -162,7 +165,7 @@ const Home = () => {
 						/>
 					))}
 				</ul>
-			</section>
+			</section> */}
 		</section>
 	);
 };

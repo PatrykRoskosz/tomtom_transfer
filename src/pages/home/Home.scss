@@ -1,4 +1,5 @@
 @use "../../styles/colors";
+@use "../../styles/vars";
 .home {
 	display: flex;
 	flex-direction: column;
@@ -16,12 +17,12 @@
 		color: colors.$black;
 		// background: colors.$dark-gold;
 	}
-	section {
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		width: 100%;
-	}
+	// section {
+	// 	display: flex;
+	// 	flex-direction: column;
+	// 	align-items: center;
+	// 	width: 100%;
+	// }
 	// section:nth-child(odd) {
 	// 	background: colors.$light;
 	// }
@@ -60,11 +61,18 @@
 		
 	}
 	.why-us {
+		width: 100%;
 		ul {
 			display: flex;
-			flex-direction: row;
-			justify-content: space-evenly;
+			flex-direction: column;
+			align-items: center;
+			width: 100%;
+		
 			padding: 80px 0;
+			@media screen and (min-width: map-get(vars.$breakpoints, "medium")) {
+				flex-direction: row;
+				justify-content: space-around;
+			}
 		}
 	}
 
@@ -74,6 +82,7 @@
 			flex-direction: column;
 			align-items: center;
 			padding: 20px 0;
+			
 		}
 	}
 }

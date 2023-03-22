@@ -6,6 +6,7 @@ import CartTop from "./carts/CartTop";
 import Footer from "./footer/Footer";
 import Header from "./header/Header";
 import Navigation from "./navigation/Navigation";
+import ServicesList from "./sections/servicesList/ServicesList";
 
 const Components = {
 	ArticleAndPhoto,
@@ -16,6 +17,7 @@ const Components = {
 	Footer,
 	Header,
 	Navigation,
+	ServicesList,
 };
 
 export default Components;

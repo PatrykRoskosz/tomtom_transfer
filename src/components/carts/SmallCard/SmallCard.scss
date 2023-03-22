@@ -1,12 +1,26 @@
+@use 'src/styles/colors';
+@use 'src/styles/vars';
 .tomtom-small-card {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin: 20px 0;
     padding: 20px;
-    width: 25%;
+    width: 250px;
     min-height: 250px;
     border-radius: 5px;
     box-shadow: 5px 5px 8px black;
-    
+    text-align: center;
+    i {
+        font-size: 60px;
+        padding-bottom: 20px;
+    }
+
+    @media screen and (min-width: map-get(vars.$breakpoints, "medium")) {
+        margin:0;
+	}
+    @media screen and (min-width: map-get(vars.$breakpoints, "large")) {
+        width: 350px;
+	}
 }
