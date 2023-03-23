@@ -1,0 +1,58 @@
+@use "src/styles/colors";
+@use "src/styles/vars";
+
+.tomtom-burger-button {
+	position: fixed;
+	top: 20px;
+	right: 20px;
+	width: 50px;
+	display: block;
+	z-index: 1000;
+	background: none;
+	border: none;
+	cursor: pointer;
+	overflow: hidden;
+	&:hover > :nth-child(1) {
+		transform: translateX(25%);
+	}
+	&:hover > :nth-child(2) {
+		transform: translateX(50%);
+	}
+	&:hover > :nth-child(3) {
+		transform: translateX(75%);
+	}
+
+	div {
+		width: 100%;
+		margin: 10px 0;
+		border: 1px solid colors.$light;
+		transition: all 0.3s ease-in;
+	}
+
+	@media screen and (min-width: map-get(vars.$breakpoints, "medium")) {
+		display: none;
+	}
+}
+.tomtom-burger-button-x {
+	div:nth-child(1) {
+		transform: rotate(-45deg) translate(-7px, 10px);
+	}
+	div:nth-child(2) {
+		transform: translateX(100%);
+	}
+	div:nth-child(3) {
+		transform: rotate(45deg) translate(-6px, -10px);
+	}
+
+	&:hover > :nth-child(1) {
+		transform: rotate(-45deg) translate(-7px, 10px);
+		border-color: colors.$primary-100;
+	}
+	&:hover > :nth-child(2) {
+		transform: translateX(100%);
+	}
+	&:hover > :nth-child(3) {
+		transform: rotate(45deg) translate(-6px, -10px);
+		border-color: colors.$primary-100;
+	}
+}

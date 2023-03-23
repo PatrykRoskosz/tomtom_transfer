@@ -1,5 +1,13 @@
 import { NavLink } from "react-router-dom";
+import {
+	useDispatchCtxNav,
+	ActionTypes,
+} from "../../context/navigation/NavContext";
 const NavigationItem = () => {
+	const dispatch = useDispatchCtxNav();
+	const hideNavHandler = () => {
+		dispatch({ type: ActionTypes.HIDE });
+	};
 	const navItems = [
 		{
 			id: 1,
@@ -33,6 +41,7 @@ const NavigationItem = () => {
 			{navItems.map(navElement => (
 				<li key={navElement.id}>
 					<NavLink
+						onClick={hideNavHandler}
 						to={navElement.url}
 						className={({ isActive }) =>
 							isActive ? "tomtom-nav-logo active" : "tomtom-nav-logo "

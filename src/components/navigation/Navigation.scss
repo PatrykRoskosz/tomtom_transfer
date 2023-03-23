@@ -2,7 +2,7 @@
 @use "../../styles/vars";
 
 .tomtom-nav {
-	position: absolute;
+	position: fixed;
 	top: 0;
 	right: 0;
 	height: 100vh;
@@ -14,7 +14,11 @@
 	padding-right: 20px;
 	text-transform: uppercase;
 	background: #000;
-	z-index: 100;
+	transform: translateX(120%);
+	transition: transform .5s ease-in;
+	z-index: 10000000;
+	
+
 	@media screen and (min-width: map-get(vars.$breakpoints, "medium")) {
 		height: auto;
 		width: 100vw;
@@ -22,21 +26,8 @@
 		flex-direction: row;
 		justify-content: flex-end;
 		background: none;
+		transform: translateX(0%);
 	}
-	i {
-		display: block;
-		position: absolute;
-		top: 0;
-		left: 0;
-		padding: 15px 30px;
-		font-size: 20px;
-		color: colors.$light;
-		cursor: pointer;
-		@media screen and (min-width: map-get(vars.$breakpoints, "medium")) {
-			display: none;
-		}
-	}
-
 	a {
 		text-decoration: none;
 		color: colors.$light;
@@ -134,5 +125,17 @@
 				margin-bottom: 0;
 			}
 		}
+	}
+}
+
+
+.show-navigation {
+	transform: translateX(0%);
+}
+.hide-navigation {
+	transform: translateX(120%);
+
+	@media screen and (min-width: map-get(vars.$breakpoints, "medium")) {
+		transform: translateX(0%);
 	}
 }

@@ -1,9 +1,10 @@
 import React from "react";
 import Navigation from "../navigation/Navigation";
 
+
 import "./Header.scss";
 
-const Header: React.FC = props => {
+const Header: React.FC = () => {
 	return (
 		<header className='header'>
 			<Navigation />
