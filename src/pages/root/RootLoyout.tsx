@@ -1,16 +1,17 @@
 import { Outlet } from "react-router-dom";
 import Header from "../../components/header/Header";
 import Wrapper from "../../components/wrapper/Wrapper";
-import Footer from "../../components/footer/Footer";
+import Component from "../../components";
 
 const RootLoyout = () => {
 	return (
 		<>
 			<Header />
+			<Component.BurgerButton />
 			<Wrapper>
 				<Outlet />
 			</Wrapper>
-			<Footer />
+			<Component.Footer />
 		</>
 	);
 };

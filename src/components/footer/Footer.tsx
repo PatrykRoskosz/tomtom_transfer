@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import "./Footer.scss";
 
 const Footer = () => {
-	return (
+	return (<>
 		<footer>
 			<section className='tomtom-footer-sections'>
 				<section className='tomtom-footer-contact'>
@@ -35,6 +35,7 @@ const Footer = () => {
 				<p>TomTom Transfer 2023 &copy;</p>
 			</div>
 		</footer>
+		</>
 	);
 };
 export default Footer;

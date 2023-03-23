@@ -6,10 +6,10 @@
 }
 body {
 	width: 100vw;
-	height: 100%;
 	background-color: colors.$white;
 	color: colors.$black;
 	// overflow: hidden;
+	// min-height: 100%;
 }
 .tomtom-hero-image {
 	position: absolute;
@@ -17,6 +17,6 @@ body {
 	left: 0;
 	width: 100%;
 	height: 100%;
-	background-color: rgba($color: #393e46, $alpha: 0.5);
-	z-index: -1;
+	background: rgba($color: #000000, $alpha: 0.6);
+	z-index: 0;
 }

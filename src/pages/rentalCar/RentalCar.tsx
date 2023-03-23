@@ -33,7 +33,7 @@ const RentalCar = () => {
 				<h1>Nasze auta</h1>
 				<ul>
 					{cars.map(car => (
-						<CartSidePhoto
+						<CartSidePhoto key={car.id}
 							id={car.id}
 							title={car.title}
 							text={car.text}
