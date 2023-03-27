@@ -1,5 +1,6 @@
 import CartTop, { CartTopType } from "../../components/carts/CartTop";
 import CartSidePhoto from "../../components/carts/CartSidePhoto/CartSidePhoto";
+import opelLightGrey from "../../images/cars/opelLightGrey.jpg"
 import kImg from "../../images/cartTopPicture/kopenhaga.jpg";
 import busImg from "../../images/cartTopPicture/auto.jpg";
 import SmallCard from "../../components/carts/SmallCard/SmallCard";
@@ -53,7 +54,7 @@ const Home = () => {
 		id: 1,
 		title: "TomTom Transfer",
 		text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat, assumenda numquam quidem voluptatum at praesentium expedita incidunt delectus in accusantium!",
-		imgSrc: busImg,
+		imgSrc:  opelLightGrey,
 		imgAlt: "siedziba firmy",
 	};
 
@@ -131,7 +132,7 @@ const Home = () => {
 				text={
 					"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam, enim molestiae provident repellat, praesentium nesciunt fuga, illo sequi architecto necessitatibus nulla delectus nostrum pariatur accusamus sit. Itaque accusantium eum ipsa harum animi. Officiis impedit quibusdam porro quis quos adipisci ut, dolores excepturi in quas eum, quod reiciendis deserunt? Optio possimus esse est neque quod ipsa assumenda vero ducimus, sapiente, magni blanditiis? Officia facere voluptates perferendis. Id corporis ducimus illo! Quaerat, sint ut nulla nostrum cum unde nisi tenetur corrupti doloribus reiciendis officiis quos nihil quae! Mollitia vero quae nesciunt doloremque, expedita, ex velit tempora, molestiae modi quidem sequi quaerat quasi."
 				}
-				imgSrc={busImg}
+				imgSrc={opelLightGrey}
 				imgAlt={"auto"}
 				reverse={true}
 			/>

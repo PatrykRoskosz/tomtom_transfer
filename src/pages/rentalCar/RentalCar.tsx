@@ -1,6 +1,7 @@
 import busImg from "../../images/cartTopPicture/auto.jpg";
 import CartSidePhoto from "../../components/carts/CartSidePhoto/CartSidePhoto";
 
+
 import "./RentalCar.scss";
 
 const RentalCar = () => {
