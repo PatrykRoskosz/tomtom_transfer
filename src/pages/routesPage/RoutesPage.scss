@@ -1,0 +1,95 @@
+@use "src/styles/colors";
+.routes-section {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 100%;
+	.routes-hero-img {
+		position: relative;
+		width: 100%;
+		height: 200px;
+		display: flex;
+		background: linear-gradient(
+			132deg,
+			rgba(2, 0, 36, 0.9122023809523809) 0%,
+			rgba(61, 61, 64, 1) 35%,
+			rgba(81, 87, 88, 1) 74%,
+			rgba(37, 37, 37, 0.9346113445378151) 100%
+		);
+		overflow: hidden;
+		div {
+			// transform: skew(-30deg);
+			background-size: cover;
+			background-position: center;
+			background-repeat: no-repeat;
+		}
+
+		.pl-img {
+			width: 70rem;
+			height: 100%;
+			background-image: url("../../images/headerPicture/warszawa.jpg");
+		}
+		.dk-img {
+			width: 70rem;
+			height: 100%;
+			background-image: url("../../images/headerPicture/kp.jpg");
+		}
+	}
+	table {
+		border-collapse: collapse;
+		width: 100%;
+		th,
+		td {
+			padding: 10px 30px;
+		}
+		th {
+			background: colors.$primary-100;
+			color: colors.$light;
+		}
+		td {
+			text-align: center;
+		}
+	}
+	.the-course-of-the-route-wrapper {
+		display: flex;
+		width: 100%;
+		height: 580px;
+		margin: 80px 0;
+		.the-course-of-the-route {
+			width: 40%;
+			h1 {
+				font-size: 36px;
+				padding: 20px 0;
+				text-align: center;
+			}
+			p {
+				margin-left: 200px;
+				line-height: 32px;
+				font-weight: bold;
+				font-size: 18px;
+
+				i {
+					margin-right: 20px;
+				}
+			}
+		}
+		.the-course-of-the-route-map {
+			width: 60%;
+			margin-right: 10px;
+            border: 2px solid black;
+			overflow: scroll;
+			img {
+				width: 100%;
+				object-fit: cover;
+				
+			}
+		}
+	}
+}
+
+.green {
+	color: green;
+}
+.red {
+	color: tomato;
+}
