@@ -1,5 +1,9 @@
 import busImg from "../../images/cartTopPicture/auto.jpg";
 import CartSidePhoto from "../../components/carts/CartSidePhoto/CartSidePhoto";
+import traficBlack from "../../images/cars/traficBlack.png";
+import traficGrey from "../../images/cars/traficGrey.png";
+import vivaro from "../../images/cars/vivaro.png";
+import Navigation from "../../components/navigation/Navigation";
 
 
 import "./RentalCar.scss";
@@ -8,30 +12,35 @@ const RentalCar = () => {
 	const cars = [
 		{
 			id: 1,
-			title: "TomTom Transfer",
+			title: "Renault Trafic",
 			text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat, assumenda numquam quidem voluptatum at praesentium expedita incidunt delectus in accusantium!",
-			imgSrc: busImg,
-			imgAlt: "siedziba firmy",
-			items: [{type: "moc", value: "100"},{type: "moc", value: "100"},{type: "moc", value: "100"},{type: "moc", value: "100"},{type: "moc", value: "100"},{type: "moc", value: "100"}]
+			imgSrc: traficBlack,
+			imgAlt: "Renault Trafic",
+			items: [{type: "Kolor: ", value: "Czarny"},{type: "Liczba miejsc: ", value: "9"},{type: "Klimatyzacja", value: "tak"},{type: "Skrzynia biegów: ", value: "manualna"},{type: "Typ silnika: ", value: "Diesel"},{type: "moc", value: "100"}]
 		},
 		{
 			id: 2,
-			title: "TomTom Transfer",
+			title: "Renault Trafic",
 			text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat, assumenda numquam quidem voluptatum at praesentium expedita incidunt delectus in accusantium!",
-			imgSrc: busImg,
-			imgAlt: "siedziba firmy",
+			imgSrc: traficGrey,
+			imgAlt: "Renault Trafic",
+			items: [{type: "Kolor: ", value: "Srebrny"},{type: "Liczba miejsc: ", value: "9"},{type: "Klimatyzacja", value: "tak"},{type: "Skrzynia biegów: ", value: "manualna"},{type: "Typ silnika: ", value: "Diesel"},{type: "moc", value: "100"}]
+
 		},
 		{
 			id: 3,
-			title: "TomTom Transfer",
+			title: "Opel Vivaro",
 			text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat, assumenda numquam quidem voluptatum at praesentium expedita incidunt delectus in accusantium!",
-			imgSrc: busImg,
-			imgAlt: "siedziba firmy",
+			imgSrc: vivaro,
+			imgAlt: "Opel Vivaro",
+			items: [{type: "Kolor: ", value: "Czarny"},{type: "Liczba miejsc: ", value: "9"},{type: "Klimatyzacja", value: "tak"},{type: "Skrzynia biegów: ", value: "manualna"},{type: "Typ silnika: ", value: "Diesel"},{type: "moc", value: "100"}]
+
 		},
 	];
 	return (
 		
 			<section className='tomtom-section-our-cars'>
+				
 				<h1>Nasze auta</h1>
 				<ul>
 					{cars.map(car => (

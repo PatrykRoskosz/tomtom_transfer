@@ -1,5 +1,6 @@
 import CartTop, { CartTopType } from "../../components/carts/CartTop";
 import CartSidePhoto from "../../components/carts/CartSidePhoto/CartSidePhoto";
+import Header from "../../components/header/Header";
 import opelLightGrey from "../../images/cars/opelLightGrey.jpg"
 import kImg from "../../images/cartTopPicture/kopenhaga.jpg";
 import busImg from "../../images/cartTopPicture/auto.jpg";
