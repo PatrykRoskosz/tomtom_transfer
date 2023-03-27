@@ -1,7 +1,10 @@
 import React from "react";
 
 import "./CartSidePhoto.scss";
-
+interface itemsType {
+	type: string;
+	value: string;
+}
 interface CartSidePhotoType {
 	id: number;
 	title: string;
@@ -9,6 +12,7 @@ interface CartSidePhotoType {
 	imgSrc: string;
 	imgAlt: string;
 	isGold?: boolean;
+	items?: itemsType[];
 }
 
 const CartSidePhoto: React.FC<CartSidePhotoType> = props => {
@@ -26,6 +30,9 @@ const CartSidePhoto: React.FC<CartSidePhotoType> = props => {
 						<h3>{props.title}</h3>
 						<div className='tomtom-cart-side-photo-text-description'>
 							<p>{props.text}</p>
+							<ul>
+								{props.items?.map((item: itemsType, id: number) => <li key={id}><p><i className="fa-sharp fa-solid fa-stop"></i>{item.type} <span>{item.value}</span></p></li>)}
+							</ul>
 						</div>
 					</div>
 				</>

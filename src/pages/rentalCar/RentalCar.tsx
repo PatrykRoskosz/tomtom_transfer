@@ -11,6 +11,7 @@ const RentalCar = () => {
 			text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat, assumenda numquam quidem voluptatum at praesentium expedita incidunt delectus in accusantium!",
 			imgSrc: busImg,
 			imgAlt: "siedziba firmy",
+			items: [{type: "moc", value: "100"},{type: "moc", value: "100"},{type: "moc", value: "100"},{type: "moc", value: "100"},{type: "moc", value: "100"},{type: "moc", value: "100"}]
 		},
 		{
 			id: 2,
@@ -39,6 +40,7 @@ const RentalCar = () => {
 							text={car.text}
 							imgSrc={car.imgSrc}
 							imgAlt={car.imgAlt}
+							items={car.items}
 						/>
 					))}
 				</ul>
