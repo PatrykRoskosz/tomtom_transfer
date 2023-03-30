@@ -1,0 +1,9 @@
+{
+    "navigation": {
+		"home": "Home",
+		"car_rental": "Car rental",
+		"trips_route": "trips & route",
+		"Transportation_of_events": "Transportation of events",
+		"contact": "Contact"
+	}
+}

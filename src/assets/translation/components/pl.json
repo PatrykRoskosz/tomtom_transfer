@@ -1,0 +1,12 @@
+{
+	"navigation": {
+		"home": "Strona główna",
+		"car_rental": "Wyporzyczalnia",
+		"trips_route": "Wyjazdy & Trasa",
+		"Transportation_of_events": "Transportowa obsługa eventów",
+		"contact": "Kontakt"
+	},
+	"header": {
+		"btn_header": "Poznaj naszą ofertę!"
+	}
+}

@@ -3,6 +3,8 @@ import {
 	useDispatchCtxNav,
 	ActionTypes,
 } from "../../context/navigation/NavContext";
+import i18n from "../../i18n";
+
 const NavigationItem = () => {
 	const dispatch = useDispatchCtxNav();
 	const hideNavHandler = () => {
@@ -11,27 +13,27 @@ const NavigationItem = () => {
 	const navItems = [
 		{
 			id: 1,
-			name: "home",
+			name: i18n.t("components:navigation.home"),
 			url: "/",
 		},
 		{
 			id: 2,
-			name: "car rent",
+			name: i18n.t("components:navigation.car_rental"),
 			url: "/rental-car",
 		},
 		{
 			id: 3,
-			name: "routes",
+			name: i18n.t("components:navigation.trips_route"),
 			url: "/routes",
 		},
 		{
 			id: 4,
-			name: "event service",
+			name: i18n.t("components:navigation.Transportation_of_events"),
 			url: "/event-service",
 		},
 		{
 			id: 5,
-			name: "contact",
+			name: i18n.t("components:navigation.contact"),
 			url: "/contact",
 		},
 	];

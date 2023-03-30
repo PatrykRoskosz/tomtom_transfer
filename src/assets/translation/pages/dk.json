@@ -1,0 +1,47 @@
+{
+	"about_us": {
+		"title": "Om os"
+	},
+	"car_rental": {
+		"cars": {
+			"black_trafic": {
+				"name": "Renault Trafic",
+				"description": "Renault Trafic bus, meget komfortabel og rummelig. Det er en perfekt bil til lange ture i en større gruppe.",
+				"color": "sort",
+				"air_conditioning": "Ja",
+				"engine_type": "diesel",
+				"number_of_seats": "9",
+				"transmission": "brugervejledning",
+				"engine_power": "100"
+			},
+			"silver_trafic": {
+				"name": "Renault Trafic",
+				"description": "Renault Trafic bus, meget komfortabel og rummelig. Det er en perfekt bil til lange ture i en større gruppe.",
+				"color": "sølv",
+				"air_conditioning": "Ja",
+				"engine_type": "diesel",
+				"number_of_seats": "9",
+				"transmission": "brugervejledning",
+				"engine_power": "100"
+			},
+			"silver_vivaro": {
+				"name": "Opel Vivaro",
+				"description": "Opel Vivaro bus, meget komfortabel og rummelig. Det er en perfekt bil til lange ture i en større gruppe.",
+				"color": "sølv",
+				"air_conditioning": "Ja",
+				"engine_type": "diesel",
+				"number_of_seats": "9",
+				"transmission": "brugervejledning",
+				"engine_power": "100"
+			}
+		},
+		"parameter_list": {
+			"color": "Farve: ",
+			"air_conditioning": "Aircondition: ",
+			"engine_type": "Motortype: ",
+			"number_of_seats": "Antal pladser: ",
+			"transmission": "Smitte: ",
+			"engine_power": "Motorkraft: "
+		}
+	}
+}

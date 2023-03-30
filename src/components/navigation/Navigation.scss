@@ -13,11 +13,10 @@
 	align-items: center;
 	padding-right: 20px;
 	text-transform: uppercase;
-	background: #000;
+	background: rgba($color: #000000, $alpha: 0.92);
 	transform: translateX(120%);
-	transition: transform .5s ease-in;
-	z-index: 10000;
-	
+	transition: transform 0.5s ease-in;
+	z-index: 9999;
 
 	@media screen and (min-width: map-get(vars.$breakpoints, "medium")) {
 		height: auto;
@@ -25,7 +24,7 @@
 		display: flex;
 		flex-direction: row;
 		justify-content: flex-end;
-		background: rgba($color: #000000, $alpha: .8);
+		background: rgba($color: #000000, $alpha: 0.8);
 		transform: translateX(0%);
 	}
 	a {
@@ -71,26 +70,28 @@
 			}
 		}
 	}
-	.btn-translate {
+	.btn-translate-wrapper {
 		position: relative;
-		padding: 10px 20px;
-		margin-top: 20px;
-		margin-left: 10px;
-		border: 1px solid colors.$light;
-		border-radius: 5px;
-		font-size: 14px;
-		color: colors.$light;
-		background: none;
-		transition: all 0.3s;
-		cursor: pointer;
-		@media screen and (min-width: map-get(vars.$breakpoints, "medium")) {
-			margin-top: 0;
-			margin-left: 10px;
-		}
-		&:hover {
-			color: colors.$primary-100;
-			border: 1px solid colors.$primary-100;
-			transform: scale(1.1);
+		.btn-translate {
+			position: relative;
+			padding: 10px 20px;
+			border: 1px solid colors.$light;
+			border-radius: 5px;
+			font-size: 14px;
+			text-transform: uppercase;
+			color: colors.$light;
+			background: none;
+			transition: all 0.3s;
+			z-index: 1;
+			cursor: pointer;
+			@media screen and (min-width: map-get(vars.$breakpoints, "medium")) {
+		
+			}
+			&:hover {
+				color: colors.$primary-100;
+				border: 1px solid colors.$primary-100;
+				transform: scale(1.1);
+			}
 		}
 		ul {
 			position: absolute;
@@ -129,7 +130,6 @@
 		}
 	}
 }
-
 
 .show-navigation {
 	transform: translateX(0%);

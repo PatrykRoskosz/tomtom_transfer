@@ -15,20 +15,8 @@
 		font-size: 34px;
 		letter-spacing: 2px;
 		color: colors.$black;
-		// background: colors.$dark-gold;
 	}
-	// section {
-	// 	display: flex;
-	// 	flex-direction: column;
-	// 	align-items: center;
-	// 	width: 100%;
-	// }
-	// section:nth-child(odd) {
-	// 	background: colors.$light;
-	// }
-	// section:nth-child(even) {
-	// 	background: colors.$white-100;
-	// }
+
 	p {
 		padding: 20px;
 	}
@@ -52,11 +40,6 @@
 		position: relative;
 		align-items: center;
 		justify-content: center;
-
-		// background-image: url("../../images/cartTopPicture/auto.jpg");
-		// background-size: cover;
-		// background-position: center;
-		// background-repeat: no-repeat;
 		z-index: 0;
 		
 	}

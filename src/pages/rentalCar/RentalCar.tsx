@@ -1,61 +1,131 @@
-import busImg from "../../images/cartTopPicture/auto.jpg";
 import CartSidePhoto from "../../components/carts/CartSidePhoto/CartSidePhoto";
 import traficBlack from "../../images/cars/traficBlack.png";
 import traficGrey from "../../images/cars/traficGrey.png";
 import vivaro from "../../images/cars/vivaro.png";
-import Navigation from "../../components/navigation/Navigation";
-
+import i18n from "../../i18n";
 
 import "./RentalCar.scss";
 
 const RentalCar = () => {
+	const { t } = i18n;
 	const cars = [
 		{
 			id: 1,
-			title: "Renault Trafic",
-			text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat, assumenda numquam quidem voluptatum at praesentium expedita incidunt delectus in accusantium!",
+			title: t("pages:car_rental.cars.black_trafic.name"),
+			text: t("pages:car_rental.cars.black_trafic.description"),
 			imgSrc: traficBlack,
-			imgAlt: "Renault Trafic",
-			items: [{type: "Kolor: ", value: "Czarny"},{type: "Liczba miejsc: ", value: "9"},{type: "Klimatyzacja", value: "tak"},{type: "Skrzynia biegów: ", value: "manualna"},{type: "Typ silnika: ", value: "Diesel"},{type: "moc", value: "100"}]
+			imgAlt: t("pages:car_rental.cars.black_trafic.name"),
+			items: [
+				{
+					type: t("pages:car_rental.parameter_list.color"),
+					value: t("pages:car_rental.cars.black_trafic.color"),
+				},
+				{
+					type: t("pages:car_rental.parameter_list.number_of_seats"),
+					value: t("pages:car_rental.cars.black_trafic.number_of_seats"),
+				},
+				{
+					type: t("pages:car_rental.parameter_list.air_conditioning"),
+					value: t("pages:car_rental.cars.black_trafic.air_conditioning"),
+				},
+				{
+					type: t("pages:car_rental.parameter_list.transmission"),
+					value: t("pages:car_rental.cars.black_trafic.transmission"),
+				},
+				{
+					type: t("pages:car_rental.parameter_list.engine_type"),
+					value: t("pages:car_rental.cars.black_trafic.engine_type"),
+				},
+				{
+					type: t("pages:car_rental.parameter_list.engine_power"),
+					value: t("pages:car_rental.cars.black_trafic.engine_power"),
+				},
+			],
 		},
 		{
 			id: 2,
-			title: "Renault Trafic",
-			text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat, assumenda numquam quidem voluptatum at praesentium expedita incidunt delectus in accusantium!",
+			title: t("pages:car_rental.cars.silver_trafic.name"),
+			text: t("pages:car_rental.cars.silver_trafic.description"),
 			imgSrc: traficGrey,
-			imgAlt: "Renault Trafic",
-			items: [{type: "Kolor: ", value: "Srebrny"},{type: "Liczba miejsc: ", value: "9"},{type: "Klimatyzacja", value: "tak"},{type: "Skrzynia biegów: ", value: "manualna"},{type: "Typ silnika: ", value: "Diesel"},{type: "moc", value: "100"}]
-
+			imgAlt: t("pages:car_rental.cars.silver_trafic.name"),
+			items: [
+				{
+					type: t("pages:car_rental.parameter_list.color"),
+					value: t("pages:car_rental.cars.silver_trafic.color"),
+				},
+				{
+					type: t("pages:car_rental.parameter_list.number_of_seats"),
+					value: t("pages:car_rental.cars.silver_trafic.number_of_seats"),
+				},
+				{
+					type: t("pages:car_rental.parameter_list.air_conditioning"),
+					value: t("pages:car_rental.cars.silver_trafic.air_conditioning"),
+				},
+				{
+					type: t("pages:car_rental.parameter_list.transmission"),
+					value: t("pages:car_rental.cars.silver_trafic.transmission"),
+				},
+				{
+					type: t("pages:car_rental.parameter_list.engine_type"),
+					value: t("pages:car_rental.cars.silver_trafic.engine_type"),
+				},
+				{
+					type: t("pages:car_rental.parameter_list.engine_power"),
+					value: t("pages:car_rental.cars.silver_trafic.engine_power"),
+				},
+			],
 		},
 		{
 			id: 3,
-			title: "Opel Vivaro",
-			text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat, assumenda numquam quidem voluptatum at praesentium expedita incidunt delectus in accusantium!",
+			title: t("pages:car_rental.cars.silver_vivaro.name"),
+			text: t("pages:car_rental.cars.silver_vivaro.description"),
 			imgSrc: vivaro,
-			imgAlt: "Opel Vivaro",
-			items: [{type: "Kolor: ", value: "Czarny"},{type: "Liczba miejsc: ", value: "9"},{type: "Klimatyzacja", value: "tak"},{type: "Skrzynia biegów: ", value: "manualna"},{type: "Typ silnika: ", value: "Diesel"},{type: "moc", value: "100"}]
-
+			imgAlt: t("pages:car_rental.cars.silver_vivaro.name"),
+			items: [
+				{
+					type: t("pages:car_rental.parameter_list.color"),
+					value: t("pages:car_rental.cars.silver_vivaro.color"),
+				},
+				{
+					type: t("pages:car_rental.parameter_list.number_of_seats"),
+					value: t("pages:car_rental.cars.silver_vivaro.number_of_seats"),
+				},
+				{
+					type: t("pages:car_rental.parameter_list.air_conditioning"),
+					value: t("pages:car_rental.cars.silver_vivaro.air_conditioning"),
+				},
+				{
+					type: t("pages:car_rental.parameter_list.transmission"),
+					value: t("pages:car_rental.cars.silver_vivaro.transmission"),
+				},
+				{
+					type: t("pages:car_rental.parameter_list.engine_type"),
+					value: t("pages:car_rental.cars.silver_vivaro.engine_type"),
+				},
+				{
+					type: t("pages:car_rental.parameter_list.engine_power"),
+					value: t("pages:car_rental.cars.silver_vivaro.engine_power"),
+				},
+			],
 		},
 	];
 	return (
-		
-			<section className='tomtom-section-our-cars'>
-				
-				<h1>Nasze auta</h1>
-				<ul>
-					{cars.map(car => (
-						<CartSidePhoto key={car.id}
-							id={car.id}
-							title={car.title}
-							text={car.text}
-							imgSrc={car.imgSrc}
-							imgAlt={car.imgAlt}
-							items={car.items}
-						/>
-					))}
-				</ul>
-			</section>
-		
+		<section className='tomtom-section-our-cars'>
+			<h1>Nasze auta</h1>
+			<ul>
+				{cars.map(car => (
+					<CartSidePhoto
+						key={car.id}
+						id={car.id}
+						title={car.title}
+						text={car.text}
+						imgSrc={car.imgSrc}
+						imgAlt={car.imgAlt}
+						items={car.items}
+					/>
+				))}
+			</ul>
+		</section>
 	);
 };
 export default RentalCar;
