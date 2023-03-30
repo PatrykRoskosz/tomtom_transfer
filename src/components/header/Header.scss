@@ -1,28 +1,75 @@
 .header {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-end;
-    width: 100vw;
-    height: 50vh;
-    background-image: url('../../images/headerPicture/busHeader.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    overflow: hidden;
-    filter: grayscale(100%);
-    // filter: saturate(7);
-    z-index: 1;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+	width: 100vw;
+	height: 50vh;
+	overflow: hidden;
+	transition: all 0.3s ease-in;
 
-    .tomtom-header-text {
-        position: absolute;
-        bottom: 20%;
-        right: 20%;
-        text-align: center;
-        color: whitesmoke;
-        z-index: 2;
+	.tomtom-header-text {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		width: 60%;
+		height: 100%;
+		background: #000;
+		text-align: center;
+		color: whitesmoke;
+		z-index: 2;
 
-    }
-   
+		h1 {
+			transition: all 0.3s .3s ease-in;
+		}
+		p {
+			transition: all 0.3s ease-in;
+		}
+
+		button {
+			margin-top: 100px;
+			transition: all 0.5s 1.4s ease-in;
+		}
+	}
+
+	.header-img {
+		position: relative;
+		width: 40%;
+		height: 100%;
+
+		img {
+			position: absolute;
+			top: 50%;
+			right: 30%;
+			height: 30vh;
+			width: 35vw;
+			filter: grayscale(100%);
+			// transform: translateY(-50%) rotate(0) translateX(0);
+			object-fit: cover;
+			object-position: center;
+			transition: all 0.5s .9s ease-in;
+			z-index: 999;
+		}
+	}
+}
+.hide-header h1,
+.hide-header p {
+	transform: translateY(-20vh);
+}
+.show-header h1 {
+	transform: translateY(0);
+}
+.hide-btn button {
+	transform: translateY(1500%);
+}
+.show-btn button {
+	transform: translateY(0);
+}
+
+.hide-header-img {
+	transform: translateY(-50%) rotate(0deg) translateX(150%);
+}
+
+.show-header-img {
+	transform: translateY(-50%) rotate(-5deg) translateX(0);
 }

@@ -1,0 +1,48 @@
+{
+    "about_us": {
+        "title": "About us"
+    },
+    "car_rental": {
+        "cars": {
+            "black_trafic": {
+                "name": "Renault Trafic",
+                "description": "Renault Trafic bus, very comfortable and spacious. It is a perfect car for long trips in a larger group.",
+                "color": "black",
+                "air_conditioning": "yes",
+                "engine_type": "diesel",
+                "number_of_seats": "9",
+                "transmission": "manual",
+                "engine_power": "100"
+            },
+            "silver_trafic": {
+                "name": "Renault Trafic",
+                "description": "Renault Trafic bus, very comfortable and spacious. It is a perfect car for long trips in a larger group.",
+                "color": "silver",
+                "air_conditioning": "tak",
+                "engine_type": "diesel",
+                "number_of_seats": "9",
+                "transmission": "manual",
+                "engine_power": "100"
+            },
+            "silver_vivaro": {
+                "name": "Opel Vivaro",
+                "description": "Renault Trafic bus, very comfortable and spacious. It is a perfect car for long trips in a larger group.",
+                "color": "silver",
+                "air_conditioning": "tak",
+                "engine_type": "diesel",
+                "number_of_seats": "9",
+                "transmission": "manual",
+                "engine_power": "100"
+            }
+        },
+        "parameter_list": {
+            "color": "Color: ",
+            "air_conditioning": "Air conditioning: ",
+            "engine_type": "Engine type: ",
+            "number_of_seats": "Number of seats: ",
+            "transmission": "Transmission: ",
+            "engine_power": "Engine power: "
+
+        }
+    }
+}

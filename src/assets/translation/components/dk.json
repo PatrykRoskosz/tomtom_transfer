@@ -1,0 +1,9 @@
+{
+    "navigation": {
+		"home": "Hjem",
+		"car_rental": "Biludlejning",
+		"trips_route": "Ture & rute",
+		"Transportation_of_events": "Transport af arrangementer",
+		"contact": "Kontakt"
+	}
+}

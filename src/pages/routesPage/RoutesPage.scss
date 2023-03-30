@@ -1,4 +1,5 @@
 @use "src/styles/colors";
+@use "src/styles/vars";
 .routes-section {
 	display: flex;
 	flex-direction: column;
@@ -35,6 +36,44 @@
 			background-image: url("../../images/headerPicture/kp.jpg");
 		}
 	}
+
+	.route-section-description {
+		margin: 40px 0;
+		display: grid;
+		grid-template-columns: 60% 40%;
+		grid-template-rows: 50vh 40vh;
+		width: 100%;
+		.one {
+			padding:40px 60px;
+			
+		h1 {
+			line-height: 25px;
+			padding: 15px 30px;
+			border-left: 4px solid black;
+			font-size: 50px;
+			letter-spacing: 2px;
+		}
+		p {
+			text-align: left;
+			padding: 40px 0;
+		}
+		}
+		.two {
+			background-image: url("../../images/headerPicture/kp.jpg");
+			background-size: cover;
+			background-repeat: no-repeat;
+			background-position: center;
+		}
+		.three {
+			background-image: url("../../images/headerPicture/warszawa.jpg");
+			background-size: cover;
+			background-repeat: no-repeat;
+			background-position: center;
+		}
+		.four {
+			background: rgb(195, 184, 30);
+		}
+	}
 	table {
 		border-collapse: collapse;
 		width: 100%;
@@ -52,36 +91,45 @@
 	}
 	.the-course-of-the-route-wrapper {
 		display: flex;
+		flex-direction: row-reverse;
 		width: 100%;
-		height: 580px;
+		height: 300px;
 		margin: 80px 0;
 		.the-course-of-the-route {
+			height: 100%;
 			width: 40%;
 			h1 {
 				font-size: 36px;
-				padding: 20px 0;
-				text-align: center;
+				margin-left: 40px;
+				padding: 0;
+				line-height: 24px;
 			}
-			p {
-				margin-left: 200px;
-				line-height: 32px;
-				font-weight: bold;
-				font-size: 18px;
-
-				i {
-					margin-right: 20px;
+			ul {
+				width: 100%;
+				padding: 30px 40px;
+				display: grid;
+				grid-template-columns: 1fr 1fr;
+				li {
+					list-style: none;
+					line-height: 32px;
+					font-weight: bold;
+					font-size: 18px;
+					i {
+						margin-right: 20px;
+					}
 				}
 			}
 		}
 		.the-course-of-the-route-map {
 			width: 60%;
-			margin-right: 10px;
-            border: 2px solid black;
+			height: 100%;
+			margin-left: 10px;
+			border: 2px solid black;
 			overflow: scroll;
 			img {
 				width: 100%;
+				min-height: 100%;
 				object-fit: cover;
-				
 			}
 		}
 	}

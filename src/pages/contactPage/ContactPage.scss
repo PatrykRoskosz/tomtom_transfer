@@ -8,8 +8,6 @@
 	width: 100vw;
 	height: 550px;
 
-		
-
 	.frame {
 		margin-top: 30px;
 		position: relative;
@@ -27,9 +25,9 @@
 			width: 90%;
 			min-height: 300px;
 			transform: translateX(-50%);
-			background: rgba($color: colors.$light, $alpha: .99);
-			
-			p{
+			background: rgba($color: colors.$light, $alpha: 0.99);
+
+			p {
 				display: flex;
 				align-items: center;
 				margin: 10px 0 10px 450px;
@@ -38,7 +36,7 @@
 					text-decoration: none;
 					color: black;
 				}
-				i{
+				i {
 					display: inline-flex;
 					align-items: center;
 					justify-content: center;
@@ -50,7 +48,7 @@
 					font-size: 30px;
 					background: colors.$primary-100;
 				}
-			};
+			}
 			.contact-photo {
 				position: absolute;
 				top: 50%;
@@ -67,16 +65,13 @@
 					width: 90%;
 					height: 90%;
 					border-radius: 50%;
-				
+					object-fit: cover;
+					object-position: -60px;
 				}
-			
 			}
 		}
 	}
 	h1 {
 		padding: 32px;
-		
 	}
-
-	
 }
