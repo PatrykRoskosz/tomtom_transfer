@@ -8,8 +8,10 @@ import SmallCard from "./carts/SmallCard/SmallCard";
 import CartTop from "./carts/CartTop";
 import Navigation from "./navigation/Navigation";
 import ServicesList from "./sections/servicesList/ServicesList";
+import Accordion from "./collapsible/Accordion";
 
 const Components = {
+	Accordion,
 	Header,
 	Footer,
 	ArticleAndPhoto,

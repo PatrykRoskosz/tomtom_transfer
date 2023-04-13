@@ -5,6 +5,33 @@ import team from "../../images/cartTopPicture/team.png";
 
 import "./RoutesPage.scss";
 
+const ofertss = [
+	{
+		id: 1,
+		title: "Przewóz osub",
+		description:
+			"Naszą główną ofertą są przejazdy Polska - Dania. Specjalizujemy się w przewozie osub prywatnych. Dzięki nam dojedziesz szybko i bezpiecznie od drzwi do drzwi. Wstarczy zadzwonić, umówić terminpodrózy a my zrobimy resztę. Na naszym pokładzie są mile widziane zwierzęta więc jeśli podrózujesz z twoim pupilem nie bedzie to zaden proble. Jest tez mozliwosc przygotowania fotelika dla twojego dziecka, jeśli jest taka potrzeba poinformuj nas o tymzebysmy mogli sie przygtowac. Po więcej informacji",
+		iconClassName: "fa-solid fa-people-group",
+		show: false,
+	},
+	{
+		id: 2,
+		title: "Kurier",
+		description:
+			"Świadczymy równiesz usługi kurjerskie Polska - Copenhaga. Jeśli chcesz wysłać paczke sprawdź naszą trasę ponizej jesli towja lokalizacja jest po drodze",
+		iconClassName: "fa-solid fa-box-open",
+		show: false,
+	},
+	{
+		id: 3,
+		title: "Oferta dla Firm",
+		description:
+			"W naszej ofercie mamy takeze coś dla firm. Jeśli szukasz transportu dla twojego zespołu to bardzo dobrze trafiłeś. Moe to być jedno razywy przejzad lub stała współpraca. by ustalić szczegóły",
+		iconClassName: "fa-solid fa-business-time",
+		show: false,
+	},
+];
+
 const oferss = [
 	{
 		id: 1,
@@ -38,6 +65,7 @@ const oferss = [
 const RoutesPage = () => {
 	return (
 		<section className='routes-section'>
+			<Components.Accordion items={ofertss} />
 			<table>
 				<thead>
 					<th>Wyjzad z</th>
