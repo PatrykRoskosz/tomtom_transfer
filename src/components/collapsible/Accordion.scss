@@ -13,7 +13,7 @@
 		width: 100%;
 		list-style: none;
 		@media screen and (min-width: map-get(vars.$breakpoints, "medium")) {
-			width: 95%;
+			width: 100%;
 		}
 
 		.accordion-title {
@@ -26,28 +26,29 @@
 			border-radius: 0;
 			border: none;
 			background-color: colors.$light;
-			// background: none;
-			transition: all 0.3s ease-out;
+			background: none;
+			transition: all 0.3s ease-in-out;
 			cursor: pointer;
 			z-index: 10;
+			overflow: hidden;
 			@media screen and (min-width: map-get(vars.$breakpoints, "medium")) {
 				border-radius: 5px;
 			}
 
 
-			.accordion-title-bg{
-				position: absolute;
-				top: 50%;
-				left: 50%;
-				width: 95%;
-				height: 30%;
-				transform: translate(-50%, -50%);
-				background: linear-gradient(39deg, rgba(124,131,131,0.7399334733893557) 0%, rgba(178,182,174,1) 52%, rgba(223,226,226,1) 100%);
-				z-index: 0;
-				@media screen and (min-width: map-get(vars.$breakpoints, "medium")) {
-					height: 42%;
-				}
-			}
+			// .accordion-title-bg{
+			// 	position: absolute;
+			// 	top: 50%;
+			// 	left: 50%;
+			// 	width: 100%;
+			// 	height: 30%;
+			// 	transform: translate(-50%, -50%);
+			// 	background: linear-gradient(39deg, rgba(124,131,131,0.7399334733893557) 0%, rgba(178,182,174,1) 52%, rgba(223,226,226,1) 100%);
+			// 	z-index: 0;
+			// 	@media screen and (min-width: map-get(vars.$breakpoints, "medium")) {
+			// 		height: 42%;
+			// 	}
+			// }
 
 			.accordion-title-img {
 				display: flex;
@@ -99,7 +100,7 @@
 					border-left: 10px solid transparent;
 					border-right: 10px solid transparent;
 					border-bottom: 15px solid colors.$light-200;
-					transition: all 0.2s ease-out;
+					transition: all 0.5s ease-out;
 
 					@media screen and (min-width: map-get(vars.$breakpoints, "medium")) {
 						border-left: 15px solid transparent;
@@ -122,11 +123,11 @@
 			align-items: center;
 			justify-content: center;
 			border-radius: 5px;
-			background-color: colors.$light;
+			// background-color: colors.$light;
 			text-align: left;
 			font-size: 12px;
 			line-height: 28px;
-			transition: all 0.3s ease-out;
+			transition: all 0.3s ease-in-out;
 
 			@media screen and (min-width: map-get(vars.$breakpoints, "medium")) {
 				font-size: 16px;
