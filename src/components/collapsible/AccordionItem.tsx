@@ -6,7 +6,7 @@ export interface AccordionItemType {
 	title: string;
 	description: string;
 	iconClassName: string;
-	show: boolean;
+	
 	
 }
 export interface AccordionItemTypeWidthClick {

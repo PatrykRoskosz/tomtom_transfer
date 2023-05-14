@@ -12,7 +12,6 @@ const ofertss = [
 		description:
 			"Naszą główną ofertą są przejazdy Polska - Dania. Specjalizujemy się w przewozie osub prywatnych. Dzięki nam dojedziesz szybko i bezpiecznie od drzwi do drzwi. Wstarczy zadzwonić, umówić terminpodrózy a my zrobimy resztę. Na naszym pokładzie są mile widziane zwierzęta więc jeśli podrózujesz z twoim pupilem nie bedzie to zaden proble. Jest tez mozliwosc przygotowania fotelika dla twojego dziecka, jeśli jest taka potrzeba poinformuj nas o tymzebysmy mogli sie przygtowac. Po więcej informacji",
 		iconClassName: "fa-solid fa-people-group",
-		show: false,
 	},
 	{
 		id: 2,
@@ -20,7 +19,6 @@ const ofertss = [
 		description:
 			"Świadczymy równiesz usługi kurjerskie Polska - Copenhaga. Jeśli chcesz wysłać paczke sprawdź naszą trasę ponizej jesli towja lokalizacja jest po drodze",
 		iconClassName: "fa-solid fa-box-open",
-		show: false,
 	},
 	{
 		id: 3,
@@ -28,44 +26,14 @@ const ofertss = [
 		description:
 			"W naszej ofercie mamy takeze coś dla firm. Jeśli szukasz transportu dla twojego zespołu to bardzo dobrze trafiłeś. Moe to być jedno razywy przejzad lub stała współpraca. by ustalić szczegóły",
 		iconClassName: "fa-solid fa-business-time",
-		show: false,
-	},
-];
-
-const oferss = [
-	{
-		id: 1,
-		title: "Przewóz osub",
-		text: "Naszą główną ofertą są przejazdy Polska - Dania. Specjalizujemy się w przewozie osub prywatnych. Dzięki nam dojedziesz szybko i bezpiecznie od drzwi do drzwi. Wstarczy zadzwonić, umówić terminpodrózy a my zrobimy resztę. Na naszym pokładzie są mile widziane zwierzęta więc jeśli podrózujesz z twoim pupilem nie bedzie to zaden proble. Jest tez mozliwosc przygotowania fotelika dla twojego dziecka, jeśli jest taka potrzeba poinformuj nas o tymzebysmy mogli sie przygtowac. Po więcej informacji",
-		imgSrc: carton,
-		imgAlt: "Renault Trafic",
-		items: [
-			{ type: "Liczba miejsc: ", value: "9" },
-			{ type: "Klimatyzacja", value: "tak" },
-		],
-	},
-	{
-		id: 2,
-		title: "Kurier",
-		text: "Świadczymy równiesz usługi kurjerskie Polska - Copenhaga. Jeśli chcesz wysłać paczke sprawdź naszą trasę ponizej jesli towja lokalizacja jest po drodze",
-		imgSrc: carton,
-		imgAlt: "Renault Trafic",
-		items: [{ type: "max waga: ", value: "100 kg" }],
-	},
-	{
-		id: 3,
-		title: "Oferta dla Firm",
-		text: "W naszej ofercie mamy takeze coś dla firm. Jeśli szukasz transportu dla twojego zespołu to bardzo dobrze trafiłeś. Moe to być jedno razywy przejzad lub stała współpraca. by ustalić szczegóły",
-		imgSrc: team,
-		imgAlt: "Renault Trafic",
-		items: [{ type: "Liczba osób: ", value: "24" }],
 	},
 ];
 
 const RoutesPage = () => {
 	return (
 		<section className='routes-section'>
-			<Components.Accordion items={ofertss} />
+			<h1>Termin wyjazdów</h1>
+
 			<table>
 				<thead>
 					<th>Wyjzad z</th>
@@ -128,55 +96,9 @@ const RoutesPage = () => {
 					</tr>
 				</tbody>
 			</table>
-			{/* <h1>Polska - Dania</h1>
+			<Components.Accordion items={ofertss} />
 
-			<div className='routes-hero-img'>
-				<div className='pl-img'></div>
-				<div className='dk-img'></div>
-			</div> */}
-			{oferss.map(item => (
-				<Components.CartSidePhoto
-					key={item.id}
-					id={item.id}
-					title={item.title}
-					text={item.text}
-					imgSrc={item.imgSrc}
-					imgAlt={item.imgAlt}
-					items={item.items}
-				/>
-			))}
-			{/* <section className='route-section-description'>
-				<div className='one'>
-					<h1>Jedź z nami</h1>
-					<p>
-						Naszą główną ofertą są przejazdy Polska - Dania. Specjalizujemy się
-						w przewozie osub prywatnych. Dzięki nam dojedziesz szybko i
-						bezpiecznie od drzwi do drzwi. Wstarczy zadzwonić, umówić termin
-						podrózy a my zrobimy resztę. Na naszym pokładzie są mile widziane
-						zwierzęta więc jeśli podrózujesz z twoim pupilem nie bedzie to zaden
-						proble. Jest tez mozliwosc przygotowania fotelika dla twojego
-						dziecka, jeśli jest taka potrzeba poinformuj nas o tymzebysmy mogli
-						sie przygtowac. Po więcej informacji
-						<a href=''> Zadzwoń do nas! +48 000-000-000</a>
-					</p>
-					<p>
-						Świadczymy równiesz usługi kurjerskie Polska - Copenhaga. Jeśli
-						chcesz wysłać paczke sprawdź naszą trasę ponizej jesli towja
-						lokalizacja jest po drodze{" "}
-						<a href=''> Zadzwoń do nas! +48 000-000-000</a> ustalimy szczeguły.
-					</p>
-				</div>
-				<div className='two'></div>
-				<div className='three'></div>
-				<div className='four'>
-					<p>
-						W naszej ofercie mamy takeze coś dla firm. Jeśli szukasz transportu
-						dla twojego zespołu to bardzo dobrze trafiłeś. Moe to być jedno
-						razywy przejzad lub stała współpraca. by ustalić szczegóły
-						<a href=''> Zadzwoń do nas! +48 000-000-000</a>
-					</p>
-				</div>
-			</section> */}
+			<h1>Termin wyjazdów</h1>
 
 			<div className='the-course-of-the-route-wrapper'>
 				<div className='the-course-of-the-route'>

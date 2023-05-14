@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import i18n from "../../i18n";
 import opelLightGrey from "../../images/cars/opelLightGrey.jpg";
 import SmallCard from "../../components/carts/SmallCard/SmallCard";
@@ -5,6 +6,18 @@ import Components from "../../components";
 import "./Home.scss";
 
 const Home = () => {
+	useEffect(() => {
+    const script = document.createElement('script');
+
+    script.src = "https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v9.0&appId=your-app-id&autoLogAppEvents=1";
+    script.async = true;
+
+    document.body.appendChild(script);
+
+    return () => {
+      document.body.removeChild(script);
+    }
+  }, []);
 	const whyUs = [
 		{
 			id: 1,
@@ -52,6 +65,25 @@ const Home = () => {
 					))}
 				</ul>
 			</section>
+			  <div id="fb-root"></div>
+      <div
+        className="fb-page"
+        data-href="https://www.facebook.com/facebook"
+        data-tabs="timeline"
+        data-width="500"
+        data-height=""
+        data-small-header="false"
+        data-adapt-container-width="true"
+        data-hide-cover="false"
+        data-show-facepile="true"
+      >
+        <blockquote
+          cite="https://www.facebook.com/facebook"
+          className="fb-xfbml-parse-ignore"
+        >
+          <a href="https://www.facebook.com/facebook">Your Page</a>
+        </blockquote>
+      </div>
 		</section>
 	);
 };
