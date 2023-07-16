@@ -1,0 +1,25 @@
+@use "src/styles/colors";
+@use "src/styles/vars";
+
+.logo {
+	display: flex;
+	align-items: center;
+	width: 100vw;
+	height: 10vh;
+	padding-left: 10px;
+	background: #000;
+
+    @media screen and (min-width: map-get(vars.$breakpoints, "medium")) {
+        height: 15vh;
+        padding-left: 40px;
+    }
+
+	h1 {
+		font-size: 14px;
+		color: whitesmoke;
+
+		@media screen and (min-width: map-get(vars.$breakpoints, "medium")) {
+			font-size: 30px;
+		}
+	}
+}

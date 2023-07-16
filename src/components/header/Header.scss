@@ -1,101 +1,168 @@
-@use'src/styles/colors';
-@use'src/styles/vars';
+@use "src/styles/colors";
+@use "src/styles/vars";
 
 .header {
-	display: flex;
-	flex-direction: row;
-	justify-content: flex-end;
+	position: relative;
 	width: 100vw;
-	height: 50vh;
-	overflow: hidden;
-	transition: all 0.3s ease-in;
-
-	.tomtom-header-text {
+	height: 75vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-image: url(../../images/headerPicture/kopenhaga.jpg);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	.bg-shadow {
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		background: rgba($color: #000000, $alpha: 0.4);
+		z-index: 0;
+	}
+	.text_wrapper {
+		// background-color: red;
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		padding: 10vh;
 		display: flex;
 		flex-direction: column;
 		align-items: center;
-		justify-content: center;
-		width: 60%;
-		height: 100%;
-		background: #000;
-		text-align: center;
+		justify-content: flex-end;
+		align-content: flex-start;
 		color: whitesmoke;
-		z-index: 2;
+		z-index: 1;
+
+		@media screen and (min-width: map-get(vars.$breakpoints, "medium")) {
+		}
 
 		h1 {
-            font-size: 16px;
-            font-weight: bold;
-            letter-spacing: 2px;
-			transition: all 0.3s .3s ease-in;
-        
-            @media screen and (min-width: map-get(vars.$breakpoints, "medium")) {
-				
-			}
-		}
-		p {
-            font-size: 12px;
-            letter-spacing: 1.4px;
-			transition: all 0.3s ease-in;
-            z-index: 9;
-            @media screen and (min-width: map-get(vars.$breakpoints, "medium")) {
-				
+			position: absolute;
+			top: 20vh;
+			left: 20vw;
+			padding-right: 5px;
+			font-size: 30px;
+			letter-spacing: 2px;
+			@media screen and (min-width: map-get(vars.$breakpoints, "medium")) {
+				left: 38vw;
+				padding-right: 5vw;
+				font-size: 50px;
+
 			}
 		}
 
 		button {
-			margin-top: 30px;
-            padding: 10px 20px;
-            font-size: 10px;
-			transition: all 0.5s 1.4s ease-in;
-
-            @media screen and (min-width: map-get(vars.$breakpoints, "medium")) {
-                margin-top: 100px;
-			}
-		}
-	}
-
-	.header-img {
-		position: relative;
-		width: 40%;
-		height: 100%;
-		background: colors.$grey;
-
-		img {
-			position: absolute;
-			top: 50%;
-			right: 10%;
-			height: 30vh;
-			width: 40vw;
-			filter: grayscale(100%);
-			object-fit: cover;
-			object-position: center;
-			transition: all 0.5s .9s ease-in;
-			z-index: 999;
-            @media screen and (min-width: map-get(vars.$breakpoints, "medium")) {
-                right: 30%;
-                width: 35vw;
-			}
+			font-size: 16px;
+			letter-spacing: 1.4px;
 		}
 	}
 }
-.hide-header h1,
-.hide-header p {
-	transform: translateY(-20vh);
-}
-.show-header h1 {
-	transform: translateY(0);
-}
-.hide-btn button {
-	transform: translateY(1500%);
-}
-.show-btn button {
-	transform: translateY(0);
-}
 
-.hide-header-img {
-	transform: translateY(-50%) rotate(0deg) translateX(150%);
-}
+// .header {
+// 	display: flex;
+// 	flex-direction: row;
+// 	justify-content: flex-end;
+// 	width: 100vw;
+// 	height: 50vh;
+// 	overflow: hidden;
+// 	transition: all 0.3s ease-in;
 
-.show-header-img {
-	transform: translateY(-50%) rotate(-5deg) translateX(0);
-}
+// 	.tomtom-header-text {
+// 		display: flex;
+// 		flex-direction: column;
+// 		align-items: center;
+// 		justify-content: center;
+// 		width: 60%;
+// 		height: 100%;
+// 		background: #000;
+// 		text-align: center;
+// 		color: whitesmoke;
+// 		z-index: 2;
+
+// 		h1 {
+//             font-size: 16px;
+//             font-weight: bold;
+//             letter-spacing: 2px;
+// 			transition: all 0.3s .3s ease-in;
+
+//             @media screen and (min-width: map-get(vars.$breakpoints, "medium")) {
+
+// 			}
+// 		}
+// 		p {
+//             font-size: 12px;
+//             letter-spacing: 1.4px;
+// 			transition: all 0.3s ease-in;
+//             z-index: 9;
+//             @media screen and (min-width: map-get(vars.$breakpoints, "medium")) {
+
+// 			}
+// 		}
+
+// 		button {
+// 			margin-top: 30px;
+//             padding: 10px 20px;
+//             font-size: 10px;
+// 			transition: all 0.5s 1.4s ease-in;
+
+//             @media screen and (min-width: map-get(vars.$breakpoints, "medium")) {
+//                 margin-top: 100px;
+// 			}
+// 		}
+// 	}
+
+// 	.heroImg  {
+// 		position: relative;
+// 		background-color: red;
+// 		width: 200px;
+// 		height: 200px;
+// 	}
+// 	.header-img {
+// 		position: relative;
+// 		width: 40%;
+// 		height: 100%;
+// 		background: colors.$grey;
+
+// 		img {
+// 			position: absolute;
+// 			top: 50%;
+// 			right: 10%;
+// 			height: 30vh;
+// 			width: 40vw;
+// 			filter: grayscale(100%);
+// 			object-fit: cover;
+// 			object-position: center;
+// 			transition: all 0.5s .9s ease-in;
+// 			z-index: 999;
+//             @media screen and (min-width: map-get(vars.$breakpoints, "medium")) {
+//                 right: 30%;
+//                 width: 35vw;
+// 			}
+// 		}
+// 	}
+// }
+// .hide-header h1,
+// .hide-header p {
+// 	transform: translateY(-20vh);
+// }
+// .show-header h1 {
+// 	transform: translateY(0);
+// }
+// .hide-btn button {
+// 	transform: translateY(1500%);
+// }
+// .show-btn button {
+// 	transform: translateY(0);
+// }
+
+// .hide-header-img {
+// 	transform: translateY(-50%) rotate(0deg) translateX(150%);
+// }
+
+// .show-header-img {
+// 	transform: translateY(-50%) rotate(-5deg) translateX(0);
+// }
