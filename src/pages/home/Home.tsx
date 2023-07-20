@@ -4,6 +4,7 @@ import opelLightGrey from "../../images/cars/opelLightGrey.jpg";
 import SmallCard from "../../components/carts/SmallCard/SmallCard";
 import Components from "../../components";
 import "./Home.scss";
+import OurOffer from "../../components/our-offer/OurOffer";
 
 const Home = () => {
 	useEffect(() => {
@@ -41,16 +42,16 @@ const Home = () => {
 
 	return (
 		<section className='home'>
+			<Components.OurOffer />
 			<Components.ArticleAndPhoto
 				title={i18n.t("pages:about_us.title")}
-				text={
-					"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam, enim molestiae provident repellat, praesentium nesciunt fuga, illo sequi architecto necessitatibus nulla delectus nostrum pariatur accusamus sit. Itaque accusantium eum ipsa harum animi. Officiis impedit quibusdam porro quis quos adipisci ut, dolores excepturi in quas eum, quod reiciendis deserunt? Optio possimus esse est neque quod ipsa assumenda vero ducimus, sapiente, magni blanditiis? Officia facere voluptates perferendis. Id corporis ducimus illo! Quaerat, sint ut nulla nostrum cum unde nisi tenetur corrupti doloribus reiciendis officiis quos nihil quae! Mollitia vero quae nesciunt doloremque, expedita, ex velit tempora, molestiae modi quidem sequi quaerat quasi."
-				}
+				text={i18n.t("pages:about_us.content")}
 				imgSrc={opelLightGrey}
 				imgAlt={"auto"}
 				reverse={true}
 			/>
 			<Components.ServicesList />
+			
 
 			<section className='why-us'>
 				<h1>Dlaczego my</h1>

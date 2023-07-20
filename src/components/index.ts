@@ -9,6 +9,7 @@ import CartTop from "./carts/CartTop";
 import Navigation from "./navigation/Navigation";
 import ServicesList from "./sections/servicesList/ServicesList";
 import Accordion from "./collapsible/Accordion";
+import OurOffer from "./our-offer/OurOffer";
 
 const Components = {
 	Accordion,
@@ -22,6 +23,7 @@ const Components = {
 	CartTop,
 	Navigation,
 	ServicesList,
+	OurOffer,
 	
 };
 
