@@ -46,17 +46,17 @@ const Home = () => {
 			<Components.AboutUsVideo />
 			<Components.WhyWorkWithUs />
 
-			<Components.ArticleAndPhoto
+			{/* <Components.ArticleAndPhoto
 				title={i18n.t("pages:about_us.title")}
 				text={i18n.t("pages:about_us.content")}
 				imgSrc={opelLightGrey}
 				imgAlt={"auto"}
 				reverse={true}
-			/>
-			<Components.ServicesList />
+			/> */}
+			{/* <Components.ServicesList /> */}
 			
 
-			<section className='why-us'>
+			{/* <section className='why-us'>
 				<h1>Dlaczego my</h1>
 				<ul>
 					{whyUs.map(card => (
@@ -68,9 +68,9 @@ const Home = () => {
 						/>
 					))}
 				</ul>
-			</section>
-			  <div id="fb-root"></div>
-      <div
+			</section> */}
+			  {/* <div id="fb-root"></div> */}
+      {/* <div
         className="fb-page"
         data-href="https://www.facebook.com/facebook"
         data-tabs="timeline"
@@ -87,7 +87,7 @@ const Home = () => {
         >
           <a href="https://www.facebook.com/facebook">Your Page</a>
         </blockquote>
-      </div>
+      </div> */}
 		</section>
 	);
 };
