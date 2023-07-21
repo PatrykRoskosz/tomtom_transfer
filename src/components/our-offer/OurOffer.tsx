@@ -15,23 +15,25 @@ const OurOffer = () => {
 			<div className='our-offer-links-list'>
 				<ul>
 					<li className='our-offer-links-list-item'>
-						<h3>Transpor Osób</h3>
 						<img src={smallToast} alt='' />
+						<h3>Transpor Osób</h3>
 						<Link to='/'>Szczegóły</Link>
 					</li>
 					<li className='our-offer-links-list-item'>
-						<h3>Przesyłki</h3>
 						<img src={toast} alt='' />
+						<h3>Przesyłki</h3>
 						<Link to='/'>Szczegóły</Link>
 					</li>
 					<li className='our-offer-links-list-item'>
-						<h3>Obsługa wydarzeń</h3>
 						<img src={wedding} alt='wesele' />
+						<h3>Obsługa wydarzeń</h3>
+
 						<Link to='/'>Szczegóły</Link>
 					</li>
 					<li className='our-offer-links-list-item'>
-						<h3>Wynajem samochodów</h3>
 						<img src={keyCar} alt='kluczyk do auta' />
+						<h3>Wynajem samochodów</h3>
+
 						<Link to='/'>Szczegóły</Link>
 					</li>
 				</ul>
