@@ -40,14 +40,21 @@ const Header: React.FC = () => {
 							text={t("components:header.btn_header")}
 							click={() => console.log("click")}
 						/>
-						<a target="_blank" href="https://www.facebook.com/pages/category/Transportation-Service/JM-SpeedTrans-241810506726740/" >asdasdasdasd</a>
+					
+					
 					</div>
 				</div>
 				<div className='bg-shadow' />
 			</header>
 		</>
 
-		// <header className='header'>
+		
+	);
+};
+export default Header;
+// m.me/1743083499347676
+
+// <header className='header'>
 		// 	<div className={headerTextClasses}>
 		// 		<h1>Tomtom Transfer</h1>
 		// 		<p>podróżuj z nami </p>
@@ -61,7 +68,3 @@ const Header: React.FC = () => {
 		// 	</div>
 		// 	{/* <div className='tomtom-hero-image'></div> */}
 		// </header>
-	);
-};
-export default Header;
-// m.me/1743083499347676

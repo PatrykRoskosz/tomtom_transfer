@@ -1,0 +1,73 @@
+@use "src/styles/colors";
+@use "src/styles/vars";
+
+.why-work-with-us {
+	position: relative;
+	padding: 60px 60px;
+	width: 100%;
+	height: 60vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	color: colors.$white-100;
+	background-image: url('../../images/why-us/whyUs.jpg');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	z-index: 1;
+
+
+	.why-work-with-us-title {
+		width: 100%;
+		h2 {
+			padding: 10px 0 10px 20px;
+			border-left: 2px solid colors.$white-100;
+			font-size: 32px;
+			letter-spacing: 2px;
+		}
+	}
+	.why-work-with-us-reasons {
+		margin: auto 50px;
+		padding: 0 10%;
+		width: 100%;
+		display: grid;
+		grid-template-columns: auto auto;
+		gap: 10px;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.why-work-with-us-hero-img {
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		background: rgba($color: #000000, $alpha: 0.55);
+		z-index: -1;
+	}
+}
+
+.why-work-with-us-reasons-item {
+	display: flex;
+	z-index: 1;
+	// border: 1px solid yellow;
+
+	.why-work-with-us-reasons-item-value {
+		padding: 20px;
+		font-size: 80px;
+		color: rgb(255, 140, 0);
+		// border: 1px solid blue;
+	}
+	.why-work-with-us-reasons-item-text {
+		display: flex;
+		align-items: center;
+		justify-content: flex-start;
+		padding: 10px 10px 10px 0;
+		width: 45%;
+		font-size: 20px;
+		letter-spacing: 1.6px;
+		// border: 1px solid red;
+
+	}
+}

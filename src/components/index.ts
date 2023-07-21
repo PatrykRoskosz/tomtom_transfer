@@ -10,6 +10,8 @@ import Navigation from "./navigation/Navigation";
 import ServicesList from "./sections/servicesList/ServicesList";
 import Accordion from "./collapsible/Accordion";
 import OurOffer from "./our-offer/OurOffer";
+import AboutUsVideo from "./about-us-video/AboutUsVideo";
+import WhyWorkWithUs from "./why-work-with-us/WhyWorkWithUs";
 
 const Components = {
 	Accordion,
@@ -24,7 +26,8 @@ const Components = {
 	Navigation,
 	ServicesList,
 	OurOffer,
-	
+	AboutUsVideo,
+	WhyWorkWithUs,
 };
 
 export default Components;

@@ -1,5 +1,9 @@
 import { Link } from "react-router-dom";
-import Components from "..";
+
+import keyCar from "../../images/ourOffer/keyCar.jpg";
+import wedding from "../../images/ourOffer/wedding.jpg";
+import toast from "../../images/ourOffer/toast.jpg";
+import smallToast from "../../images/ourOffer/smallToast.jpg";
 import "./OurOffer.scss";
 
 const OurOffer = () => {
@@ -12,22 +16,22 @@ const OurOffer = () => {
 				<ul>
 					<li className='our-offer-links-list-item'>
 						<h3>Transpor Osób</h3>
-						<img src='' alt='' />
+						<img src={smallToast} alt='' />
 						<Link to='/'>Szczegóły</Link>
 					</li>
 					<li className='our-offer-links-list-item'>
 						<h3>Przesyłki</h3>
-						<img src='' alt='' />
+						<img src={toast} alt='' />
 						<Link to='/'>Szczegóły</Link>
 					</li>
 					<li className='our-offer-links-list-item'>
 						<h3>Obsługa wydarzeń</h3>
-						<img src='' alt='' />
+						<img src={wedding} alt='wesele' />
 						<Link to='/'>Szczegóły</Link>
 					</li>
 					<li className='our-offer-links-list-item'>
 						<h3>Wynajem samochodów</h3>
-						<img src='' alt='' />
+						<img src={keyCar} alt='kluczyk do auta' />
 						<Link to='/'>Szczegóły</Link>
 					</li>
 				</ul>

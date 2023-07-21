@@ -4,7 +4,7 @@ import opelLightGrey from "../../images/cars/opelLightGrey.jpg";
 import SmallCard from "../../components/carts/SmallCard/SmallCard";
 import Components from "../../components";
 import "./Home.scss";
-import OurOffer from "../../components/our-offer/OurOffer";
+
 
 const Home = () => {
 	useEffect(() => {
@@ -43,6 +43,9 @@ const Home = () => {
 	return (
 		<section className='home'>
 			<Components.OurOffer />
+			<Components.AboutUsVideo />
+			<Components.WhyWorkWithUs />
+
 			<Components.ArticleAndPhoto
 				title={i18n.t("pages:about_us.title")}
 				text={i18n.t("pages:about_us.content")}
