@@ -12,6 +12,11 @@ import Accordion from "./collapsible/Accordion";
 import OurOffer from "./our-offer/OurOffer";
 import AboutUsVideo from "./about-us-video/AboutUsVideo";
 import WhyWorkWithUs from "./why-work-with-us/WhyWorkWithUs";
+import WhyChooseUs from "./why-choose-us/WhyChooseUs";
+import Welcome from "./welcome/Welcome";
+import Trust from "./trust/Trust";
+import ContactUsToDay from "./contact-us-today/ContactUsToDay";
+import TripTable from "./table/TripTable";
 
 const Components = {
 	Accordion,
@@ -28,6 +33,11 @@ const Components = {
 	OurOffer,
 	AboutUsVideo,
 	WhyWorkWithUs,
+	Welcome,
+	WhyChooseUs,
+	Trust,
+	ContactUsToDay,
+	TripTable,
 };
 
 export default Components;

@@ -1,9 +1,61 @@
 {
-    "navigation": {
+	"navigation": {
 		"home": "Hjem",
 		"car_rental": "Biludlejning",
 		"trips_route": "Ture & rute",
 		"Transportation_of_events": "Transport af arrangementer",
 		"contact": "Kontakt"
+	},
+	"header": {
+		"title": "Sikker rejse fra Polen til København",
+		"btn_header": "Lær vores tilbud at kende!"
+	},
+	"welcome": {
+		"one": "Velkommen til",
+		"two": "Din pålidelige partner inden for international transport!"
+	},
+	"transport_offer": {
+		"one": {
+			"title": "Persontransport",
+			"text": "Individuel rejse: Uanset om du planlægger en forretningsrejse, et turisteventyr eller et personligt besøg i Danmark, tilbyder vi komfortabel og sikker persontransport. Grupperejser: Skal du arrangere en integrationsrejse, konference eller gruppeudflugt? Vores køretøjer er den perfekte løsning for grupper i alle størrelser. "
+		},
+		"two": {
+			"title": "Pakkelevering",
+			"text": "Vi garanterer hurtig og sikker levering af pakker fra dør til dør. Dine pakker når deres modtagere i Danmark effektivt og i perfekt stand."
+		},
+		"three": {
+			"title": "Transport af medarbejdergrupper",
+			"text": "Vi tilbyder bekvem transport af medarbejdere til deres arbejdspladser i Danmark, hvilket bidrager til deres tilfredshed og produktivitet."
+		}
+	},
+	"trust": {
+		"one": "Mange kunder har allerede sat deres lid til os, hvilket vidner om kvaliteten af vores tjenester.",
+		"two": "Vi inviterer dig til at opleve det selv."
+	},
+	"why_choose_us": {
+		"title": "Hvorfor vælge ",
+		"one": {
+			"title": "Erfaring",
+			"description": "Vi er et velsmurt team af specialister med omfattende erfaring inden for transportbranchen."
+		},
+		"two": {
+			"title": "Køretøjspark",
+			"description": "Vores moderne køretøjer er udstyret med avancerede sikkerhedsfunktioner og giver en behagelig rejseoplevelse."
+		},
+		"three": {
+			"title": "Kundeservice",
+			"description": "Vi prioriterer individuel tilgang til hver ordre og sikrer professionel assistance gennem hele vores samarbejde."
+		},
+		"four": {
+			"title": "Punktualitet",
+			"description": "Vores tjenester er kendt for at være punktlige og pålidelige, hvilket sikrer, at vi når frem til din destination til tiden."
+		}
+	},
+	"contact_us_today": {
+		"title": "Kontakt os i dag",
+		"description": "or at få mere at vide om vores tjenester, priser og tilgængelighed. Vores team står klar til at besvare alle dine spørgsmål og hjælpe dig med at arrangere den perfekte transport for dig eller dit firma.",
+		"one": "Vælg",
+		"two": "og rejser sikkert og komfortabelt med os!"
 	}
+	
 }

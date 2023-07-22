@@ -34,7 +34,7 @@ const Header: React.FC = () => {
 			<Logo />
 			<header className='header'>
 				<div className='text_wrapper'>
-					<h1>Bezpieczne podróże z Polski do Kopenhagi</h1>
+					<h1>{t("components:header.title")}</h1>
 					<div>
 						<Button
 							text={t("components:header.btn_header")}

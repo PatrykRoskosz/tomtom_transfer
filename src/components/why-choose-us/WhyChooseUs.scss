@@ -1,0 +1,65 @@
+@use "../../styles/colors";
+@use "../../styles/vars";
+
+.why-choose-us {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	
+	.why-choose-us-question {
+		padding: 20px 10px 10px;
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		p {
+			font-size: 18px;
+			font-weight: bold;
+		}
+		h3 {
+			margin: 20px 0;
+			padding: 10px 20px;
+			border-radius: 5px;
+			background: colors.$primary-100;
+			color: colors.$white-100;
+			font-size: 24px;
+		}
+	}
+	.why-choose-us-justification {
+		padding: 20px 0;
+		width: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: stretch;
+		flex-wrap: wrap;
+		gap: 25px;
+
+		.justification {
+			padding: 10px 20px;
+			width: 250px;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			color: colors.$black;
+			background: none;
+			border-radius: 5px;
+			box-shadow: 2px 2px 4px colors.$black;
+			.i {
+				margin: 10px 0;
+				color: colors.$primary-100;
+				font-size: 50px;
+			}
+			span {
+				margin: 10px 0;
+				font-size: 20px;
+				font-weight: bold;
+			}
+			p {
+				padding: 10px 0;
+				text-align: center;
+			}
+		}
+	}
+}
