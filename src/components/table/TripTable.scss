@@ -1,0 +1,28 @@
+@use "../../styles/colors";
+@use "../../styles/vars";
+table {
+    border-collapse: collapse;
+    width: 100%;
+    th,
+    td {
+        padding: 5px 0px;
+        font-size: 8px;
+        @media screen and (min-width: map-get(vars.$breakpoints, "medium")) {
+            padding: 10px 20px;
+            font-size: 14px;
+        }
+    }
+    th {
+        // background: colors.$light;
+        color: colors.$primary-200;
+    }
+    td {
+        text-align: center;
+    }
+}
+.green {
+	color: green;
+}
+.red {
+	color: tomato;
+}

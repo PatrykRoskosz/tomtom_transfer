@@ -7,6 +7,55 @@
 		"contact": "Kontakt"
 	},
 	"header": {
+		"title": "Bezpieczne podróże z Polski do Kopenhagi",
 		"btn_header": "Poznaj naszą ofertę!"
-	}
+	},
+	"welcome": {
+		"one": "Witajcie w",
+		"two": "Twóijm zaufany partner w przewozach międzynarodowych!"
+	},
+	"transport_offer": {
+		"one": {
+			"title": "Przewozy osobowe",
+			"text": "Indywidualne podróże: Jeśli planujesz wyjazd do Danii w celach biznesowych, turystycznych lub osobistych, oferujemy komfortowy i bezpieczny transport osobowy. Grupowe przewozy: Organizujesz wyjazd integracyjny, konferencję czy wycieczkę grupową? Nasze pojazdy są idealnym rozwiązaniem dla grup ludzi o różnej wielkości. "
+		},
+		"two": {
+			"title": "Przewóz paczek",
+			"text": "Gwarantujemy szybki i pewny przewóz paczek od drzwi do drzwi. Twoje paczki dotrą do odbiorcy w Danii sprawnie i w nienaruszonym stanie."
+		},
+		"three": {
+			"title": "Przewozy pracowników firm",
+			"text": "Zapewniamy wygodny transport pracowników do ich miejsca pracy w Danii, co wpływa na ich zadowolenie i efektywność."
+		}
+	},
+	"trust": {
+		"one": "Zaufało nam już wielu Klientów, co świadczy o jakości naszych usług.",
+		"two": "Chcielibyśmy zaprosić Cię do doświadczenia tego samemu."
+	},
+	"why_choose_us": {
+		"title": "Dlaczego warto wybrać",
+		"one": {
+			"title": "Doświadczenie",
+			"description": "Jesteśmy zgranym zespołem specjalistów, którzy posiadają bogate doświadczenie w branży transportowej."
+		},
+		"two": {
+			"title": "Flota pojazdów",
+			"description": "Nasze pojazdy są nowoczesne, wyposażone w zaawansowane rozwiązania bezpieczeństwa oraz zapewniające wygodę podróży."
+		},
+		"three": {
+			"title": "Dbałość o Klienta",
+			"description": "Stawiamy na indywidualne podejście do każdego zlecenia i zapewniamy profesjonalną obsługę na każdym etapie współpracy."
+		},
+		"four": {
+			"title": "Terminowość",
+			"description": "Nasze usługi cechuje punktualność i rzetelność, dlatego możesz być pewien, że dotrzemy na miejsce na czas."
+		}
+	},
+	"contact_us_today": {
+		"title": "Skontaktuj się z nami już dziś",
+		"description": "aby dowiedzieć się więcej o naszych usługach, cennikach oraz dostępności. Nasz zespół z przyjemnością odpowie na wszystkie Twoje pytania i pomoże zorganizować idealny przewóz dla Ciebie lub Twojej firmy.",
+		"one": "Wybierz",
+		"two": " i podróżuj z nami bezpiecznie i wygodnie!"
+	},
+	"buissness_description": "Jesteśmy dynamiczną i doświadczoną firmą transportową, skupioną na dostarczaniu niezawodnych usług przewozu osób oraz paczek z Polski do Danii. Nasza misja polega na zapewnieniu bezpiecznych, komfortowych i terminowych podróży które spełniają oczekiwania naszych Klientów w każdym calu."
 }

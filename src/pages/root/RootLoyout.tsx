@@ -4,9 +4,11 @@ import Wrapper from "../../components/wrapper/Wrapper";
 import Component from "../../components";
 import Navigation from "../../components/navigation/Navigation";
 
+
 const RootLoyout = () => {
 	return (
 		<>
+		
 			<Header />
 			<Navigation />
 			<Component.BurgerButton />

@@ -1,0 +1,24 @@
+@use "../../styles/colors";
+@use "../../styles/vars";
+
+.buissness_description {
+	padding: 30px 10px;
+	width: 100%;
+	border-top: 0.5px solid colors.$grey-0;
+	border-bottom: 0.5px solid colors.$grey-0;
+	text-align: center;
+	font-size: 14px;
+	letter-spacing: 1px;
+	@media screen and (min-width: map-get(vars.$breakpoints, "small")) {
+		width: 90%;
+		font-size: 16px;
+		letter-spacing: 1.4px;
+	}
+	@media screen and (min-width: map-get(vars.$breakpoints, "medium")) {
+		letter-spacing: 1.6px;
+	}
+	@media screen and (min-width: map-get(vars.$breakpoints, "xm")) {
+		font-size: 18px;
+		letter-spacing: 2px;
+	}
+}

@@ -1,0 +1,100 @@
+@use "../../styles/colors";
+@use "../../styles/vars";
+
+.contact-us-today {
+	padding: 40px 5px;
+	width: 100%;
+
+	h2 {
+		margin: 20px 0;
+		padding: 10px 0;
+		font-size: 15px;
+		font-weight: bold;
+		letter-spacing: 1px;
+		border-bottom: 0.4px solid colors.$grey-0;
+		@media screen and (min-width: map-get(vars.$breakpoints, "small")) {
+			margin: 20px 10px;
+			padding: 10px 20px;
+			font-size: 18px;
+			letter-spacing: 1.6px;
+		}
+		@media screen and (min-width: map-get(vars.$breakpoints, "medium")) {
+			margin: 20px 20px;
+			padding: 10px 40px;
+			font-size: 22px;
+			letter-spacing: 2px;
+		}
+		@media screen and (min-width: map-get(vars.$breakpoints, "xm")) {
+			margin: 20px 30px;
+			padding: 20px 40px;
+			font-size: 32px;
+			letter-spacing: 2.2px;
+		}
+	}
+	p {
+		padding: 0 10px;
+		font-size: 14px;
+		line-height: 20px;
+		letter-spacing: 1px;
+		@media screen and (min-width: map-get(vars.$breakpoints, "small")) {
+			padding: 0 40px;
+			font-size: 14px;
+			line-height: 22px;
+			letter-spacing: 1.2px;
+		}
+		@media screen and (min-width: map-get(vars.$breakpoints, "medium")) {
+			padding: 0 60px;
+			font-size: 14px;
+			line-height: 22px;
+			letter-spacing: 1.4px;
+		}
+		@media screen and (min-width: map-get(vars.$breakpoints, "xm")) {
+			padding: 0 100px;
+			font-size: 18px;
+			line-height: 26px;
+			letter-spacing: 1.6px;
+		}
+	}
+	.contact-us-today-choose-us {
+		margin: 40px 0;
+		width: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		p {
+			font-size: 14px;
+			font-weight: bold;
+			text-align: center;
+			letter-spacing: 1px;
+			@media screen and (min-width: map-get(vars.$breakpoints, "small")) {
+				font-size: 16px;
+				letter-spacing: 1.2px;
+			}
+			@media screen and (min-width: map-get(vars.$breakpoints, "medium")) {
+				font-size: 20px;
+				letter-spacing: 1.4px;
+			}
+			span {
+				display: inline-block;
+				margin: 15px 0;
+				padding: 5px;
+				font-size: 14px;
+				letter-spacing: 1.2px;
+				color: colors.$white-100;
+				background: colors.$primary-100;
+				transform: skew(-15deg) rotate(-3deg);
+				@media screen and (min-width: map-get(vars.$breakpoints, "small")) {
+                    padding: 8px;
+					font-size: 18px;
+                    letter-spacing: 1.4px;
+				}
+				@media screen and (min-width: map-get(vars.$breakpoints, "medium")) {
+                    margin: 25px 0;
+                    padding: 10px 20px;
+					font-size: 24px;
+                    letter-spacing: 1.6px;
+				}
+			}
+		}
+	}
+}

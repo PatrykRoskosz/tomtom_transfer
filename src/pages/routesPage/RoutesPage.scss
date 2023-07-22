@@ -5,6 +5,24 @@
 	flex-direction: column;
 	align-items: center;
 	width: 100%;
+	overflow: hidden;
+	.routes-section-design-description {
+		padding: 20px 16px;
+		line-height: 20px;
+		text-align: justify;
+		font-size: 14px;
+		@media screen and (min-width: map-get(vars.$breakpoints, "small")) {
+			padding: 40px 40px;
+			line-height: 24px;
+			font-size: 16px;
+		}
+	}
+	.routes-section-ul {
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
 	.routes-hero-img {
 		position: relative;
 		width: 100%;
@@ -44,19 +62,19 @@
 		grid-template-rows: 50vh 40vh;
 		width: 100%;
 		.one {
-			padding:40px 60px;
-			
-		h1 {
-			line-height: 25px;
-			padding: 15px 30px;
-			border-left: 4px solid black;
-			font-size: 50px;
-			letter-spacing: 2px;
-		}
-		p {
-			text-align: left;
-			padding: 40px 0;
-		}
+			padding: 40px 60px;
+
+			h1 {
+				line-height: 25px;
+				padding: 15px 30px;
+				border-left: 4px solid black;
+				font-size: 50px;
+				letter-spacing: 2px;
+			}
+			p {
+				text-align: left;
+				padding: 40px 0;
+			}
 		}
 		.two {
 			background-image: url("../../images/headerPicture/kp.jpg");
@@ -74,27 +92,7 @@
 			background: rgb(195, 184, 30);
 		}
 	}
-	table {
-		border-collapse: collapse;
-		width: 100%;
-		th,
-		td {
-			padding: 5px 0px;
-			font-size: 8px;
-			@media screen and (min-width: map-get(vars.$breakpoints, "medium")) {
-				padding: 10px 20px;
-				font-size: 14px;
-			}
 	
-		}
-		th {
-			// background: colors.$light;
-			color: colors.$primary-200;
-		}
-		td {
-			text-align: center;
-		}
-	}
 	.the-course-of-the-route-wrapper {
 		display: flex;
 		flex-direction: row-reverse;
@@ -141,9 +139,4 @@
 	}
 }
 
-.green {
-	color: green;
-}
-.red {
-	color: tomato;
-}
+

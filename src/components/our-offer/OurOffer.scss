@@ -1,0 +1,145 @@
+@use "src/styles/colors";
+@use "src/styles/vars";
+
+.our-offer {
+	padding: 10px;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	// align-items: center;
+	justify-content: center;
+	@media screen and (min-width: map-get(vars.$breakpoints, "small")) {
+		padding: 20px;
+	}
+	@media screen and (min-width: map-get(vars.$breakpoints, "medium")) {
+		padding: 40px;
+		flex-direction: row;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.our-offer-text-section {
+		width: 28%;
+		height: 100%;
+
+		h2 {
+			padding: 5px 0 5px 10px;
+			margin-bottom: 30px;
+			width: 100%;
+			border-left: 1.4px solid black;
+			font-size: 16px;
+			@media screen and (min-width: map-get(vars.$breakpoints, "medium")) {
+				margin-bottom: 0;
+				padding: 10px 0 10px 20px;
+				font-size: 26px;
+				border-left: 2px solid black;
+			}
+			@media screen and (min-width: map-get(vars.$breakpoints, "large")) {
+				font-size: 32px;
+			}
+		}
+	}
+	.our-offer-links-list {
+		width: 100%;
+		height: 100%;
+
+		@media screen and (min-width: map-get(vars.$breakpoints, "medium")) {
+			width: 72%;
+		}
+
+		ul {
+			display: grid;
+			grid-auto-columns: 1fr;
+			grid-auto-flow: column;
+			grid-template-rows: auto auto auto auto;
+			justify-content: center;
+			align-items: center;
+			gap: 10px;
+			list-style: none;
+			width: 100%;
+			height: 100%;
+
+			@media screen and (min-width: map-get(vars.$breakpoints, "small")) {
+				grid-auto-columns: calc(50% - 5px) calc(50% - 5px);
+				grid-auto-flow: column;
+				grid-template-rows: auto auto;
+			}
+			@media screen and (min-width: map-get(vars.$breakpoints, "medium")) {
+				grid-auto-columns: calc(50% - 5px) calc(50% - 5px);
+				grid-auto-flow: column;
+				grid-template-rows: auto auto;
+				gap: 10px;
+			}
+			.our-offer-links-list-item {
+				position: relative;
+				border: 1px solid black;
+				border-radius: 5px;
+				width: 100%;
+				height: 250px;
+				overflow: hidden;
+
+				@media screen and (min-width: map-get(vars.$breakpoints, "large")) {
+					height: 320px;
+				}
+				h3 {
+					padding: 10px 0;
+					width: 100%;
+					text-align: center;
+					color: whitesmoke;
+					text-decoration: none;
+					font-size: 16px;
+					background-color: rgba($color: colors.$black, $alpha: 0.8);
+					@media screen and (min-width: map-get(vars.$breakpoints, "small")) {
+						font-size: 15px;
+					}
+
+					@media screen and (min-width: map-get(vars.$breakpoints, "medium")) {
+						font-size: 20px;
+					}
+					@media screen and (min-width: map-get(vars.$breakpoints, "xm")) {
+						font-size: 24px;
+					}
+				}
+				a {
+					position: absolute;
+					padding: 5px 15px;
+					bottom: 10px;
+					right: 10px;
+					border-radius: 5px;
+					color: orange;
+					background: rgba($color: #000000, $alpha: .4);
+					border: 2px solid orange;
+					text-decoration: none;
+					text-transform: uppercase;
+					font-size: 12px;
+					font-weight: bold;
+					transition: background 0.3s, color 1s;
+					z-index: 2;
+					@media screen and (min-width: map-get(vars.$breakpoints, "medium")) {
+						bottom: 15px;
+						right: 15px;
+						padding: 10px 20px;
+						font-size: 14px;
+					}
+				}
+				a:hover {
+					color: colors.$white;
+					background: orange;
+				}
+				button {
+					position: absolute;
+					bottom: 15px;
+					right: 15px;
+				}
+				img {
+					position: absolute;
+					width: 100%;
+					height: 100%;
+					object-fit: cover;
+					background: rgb(235, 126, 126);
+					z-index: -1;
+				}
+			}
+		}
+	}
+}

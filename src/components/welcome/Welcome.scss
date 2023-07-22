@@ -1,0 +1,130 @@
+@use "src/styles/colors";
+@use "src/styles/vars";
+
+.welcome {
+	position: relative;
+	width: 100vw;
+	height: 380px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-around;
+	overflow: hidden;
+	@media screen and (min-width: map-get(vars.$breakpoints, "small")) {
+		width: calc(100vw - 60px);
+		height: 520px;
+	}
+	@media screen and (min-width: 703px) {
+		flex-direction: row;
+		justify-content: space-between;
+		height: 600px;
+	}
+	@media screen and (min-width: map-get(vars.$breakpoints, "medium")) {
+		align-items: center;
+	}
+	@media screen and (min-width: map-get(vars.$breakpoints, "xm")) {
+		height: 800px;
+	}
+
+	.welcome-text-section-wrapper {
+		margin-left: 0;
+		margin-right: 0;
+		margin-top: auto;
+		color: colors.$black;
+		font-weight: bold;
+		z-index: 2;
+		@media screen and (min-width: 703px) {
+			margin-top: 0;
+			margin-left: 60px;
+			margin-right: auto;
+		}
+
+		@media screen and (min-width: map-get(vars.$breakpoints, "medium")) {
+			margin-left: 80px;
+		}
+		@media screen and (min-width: map-get(vars.$breakpoints, "xl")) {
+			margin-left: auto;
+		}
+		.welcome-text-section-welcome-text {
+			padding-left: 10px;
+			font-size: 14px;
+			text-align: left;
+			transform: rotate(0deg);
+			@media screen and (min-width: map-get(vars.$breakpoints, "medium")) {
+				font-size: 24px;
+			}
+		}
+		.welcome-text-section-header-wrapper {
+			margin: 2px 0;
+			padding: 5px 8px;
+			min-width: 220px;
+			transform: skew(-15deg) rotate(-3deg);
+			background-color: colors.$primary-200;
+
+			@media screen and (min-width: map-get(vars.$breakpoints, "medium")) {
+				padding: 10px 15px;
+				width: 340px;
+			}
+			@media screen and (min-width: map-get(vars.$breakpoints, "large")) {
+				width: 480px;
+			}
+			@media screen and (min-width: map-get(vars.$breakpoints, "xl")) {
+				width: 680px;
+			}
+			h2 {
+				font-size: 16px;
+				letter-spacing: 2.4px;
+				color: whitesmoke;
+				@media screen and (min-width: map-get(vars.$breakpoints, "small")) {
+					font-size: 18px;
+					letter-spacing: 1.6px;
+				}
+				@media screen and (min-width: map-get(vars.$breakpoints, "medium")) {
+					font-size: 28px;
+				}
+				@media screen and (min-width: map-get(vars.$breakpoints, "large")) {
+					font-size: 42px;
+				}
+				@media screen and (min-width: map-get(vars.$breakpoints, "xl")) {
+					font-size: 55px;
+				}
+			}
+		}
+		p {
+			text-align: center;
+			font-size: 10px;
+			max-width: 80vw;
+			transform: rotate(-3deg);
+			@media screen and (min-width: map-get(vars.$breakpoints, "small")) {
+				max-width: 240px;
+			}
+			@media screen and (min-width: map-get(vars.$breakpoints, "medium")) {
+				font-size: 14px;
+				max-width: 400px;
+			}
+			@media screen and (min-width: map-get(vars.$breakpoints, "xm")) {
+				font-size: 16px;
+				max-width: 500px;
+			}
+			@media screen and (min-width: map-get(vars.$breakpoints, "xl")) {
+				font-size: 16px;
+				max-width: 600px;
+			}
+		}
+	}
+	img {
+		max-width: 100%;
+		object-fit: cover;
+		object-position: center;
+
+		@media screen and (min-width: map-get(vars.$breakpoints, "small")) {
+			max-width: 82%;
+		}
+		@media screen and (min-width: 703px) {
+			max-width: 80%;
+		}
+		@media screen and (min-width: map-get(vars.$breakpoints, "xm")) {
+			max-width: 1000px;
+		}
+	}
+}

@@ -1,9 +1,61 @@
 {
-    "navigation": {
+	"navigation": {
 		"home": "Home",
 		"car_rental": "Car rental",
 		"trips_route": "trips & route",
 		"Transportation_of_events": "Transportation of events",
 		"contact": "Contact"
-	}
+	},
+	"header": {
+		"title": "Safe travel from Poland to Copenhagen",
+		"btn_header": "Get to know our offer!"
+	},
+	"welcome": {
+		"one": "Welcome to",
+		"two": "Your Trusted Partner in International Transportation!"
+	},
+	"transport_offer": {
+		"one": {
+			"title": "Passenger Transport",
+			"text": "Individual Travel: Whether you are planning a business trip, a tourist adventure, or a personal visit to Denmark,we offer comfortable and safe passenger transport. Group Travel: Organizing an integration trip, conference, or group excursion? Our vehicles are the perfect solution for groups of all sizes."
+		},
+		"two": {
+			"title": "Package Delivery",
+			"text": "We guarantee fast and secure package delivery from door to door. Your packages will reach their recipients in Denmark efficiently and in perfect condition."
+		},
+		"three": {
+			"title": "Corporate Group Transport",
+			"text": "We provide convenient transportation for employees to their workplaces in Denmark, contributing to their satisfaction and productivity."
+		}
+	},
+	"trust": {
+		"one": "Many customers have already put their trust in us, which speaks to the quality of our services. ",
+		"two": "We invite you to experience it for yourself."
+	},
+	"why_choose_us": {
+		"title": "Why Choose",
+		"one": {
+			"title": "Experience",
+			"description": "We are a well-coordinated team of specialists with extensive experience in the transportation industry."
+		},
+		"two": {
+			"title": "Fleet of Vehicles",
+			"description": "Our modern vehicles are equipped with advanced safety features and provide a comfortable travel experience."
+		},
+		"three": {
+			"title": "Customer Care",
+			"description": "We prioritize individual approach to each order and ensure professional assistance throughout our cooperation."
+		},
+		"four": {
+			"title": "Punctuality",
+			"description": " Our services are known for being punctual and reliable, ensuring that we arrive at your destination on time."
+		}
+	},
+	"contact_us_today": {
+		"title": "Get in touch with us today",
+		"description": "to learn more about our services, pricing, and availability. Our team will be delighted to answer all your questions and help you arrange the perfect transportation for yourself or your company.",
+		"one": "Choose",
+		"two": "and travel safely and comfortably with us!"
+	},
+	"buissness_description": "We are a dynamic and experienced transport company, dedicated to providing reliable transportation services for people and packages from Poland to Denmark. Our mission is to ensure safe, comfortable, and timely journeys that meet all our customers' expectations."
 }

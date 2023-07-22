@@ -21,6 +21,7 @@ const Footer = () => {
 							<label htmlFor='email'>Email: </label>
 							<a href=''> lalala@lal.cl</a>
 						</div>
+						<div className="tomtom-footer-hero"></div>
 					</section>
 					<section className='tomtom-footer-navigation'>
 						<Link to='/'>Home</Link>
@@ -28,10 +29,11 @@ const Footer = () => {
 						<Link to='/routes'>Routes</Link>
 						<Link to='/event-service'>Events service</Link>
 						<Link to='/contact'>Contact</Link>
+						<div className="tomtom-footer-hero"></div>
 					</section>
 				</section>
 				<div className='tomtom-footer-info'>
-					<p>TomTom Transfer 2023 &copy;</p>
+					<p className="tomtom-footer-info-paragraph">TomTom Transfer 2023 &copy;</p>
 				</div>
 				<div className='footer-hero-img'></div>
 			</footer>
