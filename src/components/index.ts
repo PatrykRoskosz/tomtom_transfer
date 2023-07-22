@@ -17,6 +17,7 @@ import Welcome from "./welcome/Welcome";
 import Trust from "./trust/Trust";
 import ContactUsToDay from "./contact-us-today/ContactUsToDay";
 import TripTable from "./table/TripTable";
+import BuissnessDescription from "./buissnes_description/BuissnessDescription";
 
 const Components = {
 	Accordion,
@@ -38,6 +39,7 @@ const Components = {
 	Trust,
 	ContactUsToDay,
 	TripTable,
+	BuissnessDescription,
 };
 
 export default Components;

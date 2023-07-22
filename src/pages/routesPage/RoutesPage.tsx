@@ -32,36 +32,11 @@ const ofertss = [
 	},
 ];
 
-const oferta = [
-	{
-		id: 1,
-		title: "Przewozy osobowe",
-		text: "Indywidualne podróże: Jeśli planujesz wyjazd do Danii w celach biznesowych, turystycznych lub osobistych, oferujemy komfortowy i bezpieczny transport osobowy. Grupowe przewozy: Organizujesz wyjazd integracyjny, konferencję czy wycieczkę grupową? Nasze pojazdy są idealnym rozwiązaniem dla grup ludzi o różnej wielkości. ",
-		imgSrc: "",
-		imgAlt: "",
-		items: [],
-	},
-	{
-		id: 2,
-		title: "Przewóz paczek",
-		text: "Gwarantujemy szybki i pewny przewóz paczek od drzwi do drzwi. Twoje paczki dotrą do odbiorcy w Danii sprawnie i w nienaruszonym stanie.",
-		imgSrc: "",
-		imgAlt: "",
-		items: [],
-	},
-	{
-		id: 3,
-		title: "Przewozy pracowników firm",
-		text: "Zapewniamy wygodny transport pracowników do ich miejsca pracy w Danii, co wpływa na ich zadowolenie i efektywność.",
-		imgSrc: "",
-		imgAlt: "",
-		items: [],
-	},
-];
+
 
 const RoutesPage = () => {
 	const { t } = i18n;
-	const oferta = [
+	const offer = [
 		{
 			id: 1,
 			title: t("components:transport_offer.one.title"),
@@ -90,16 +65,11 @@ const RoutesPage = () => {
 	return (
 		<section className='routes-section'>
 			<Components.Welcome />
+			<Components.BuissnessDescription />
 			<Components.TripTable />
-			<div className='routes-section-design-description'>
-				Jesteśmy dynamiczną i doświadczoną firmą transportową, skupioną na
-				dostarczaniu niezawodnych usług przewozu osób oraz paczek z Polski do
-				Danii. Nasza misja polega na zapewnieniu bezpiecznych, komfortowych i
-				terminowych podróży, które spełniają oczekiwania naszych Klientów w
-				każdym calu.
-			</div>
+			
 			<ul className='routes-section-ul'>
-				{oferta.map(car => (
+				{offer.map(car => (
 					<CartSidePhoto
 						key={car.id}
 						id={car.id}
