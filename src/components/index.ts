@@ -19,6 +19,7 @@ import ContactUsToDay from "./contact-us-today/ContactUsToDay";
 import TripTable from "./table/TripTable";
 import BuissnessDescription from './buissnes_description/BuissnessDescription'
 import HeaderEvent from "./event-handling/HeaderEvent";
+import DepartureMap from "./departure-map/DepartureMap";
 
 const Components = {
 	Accordion,
@@ -42,6 +43,7 @@ const Components = {
 	TripTable,
 	BuissnessDescription,
 	HeaderEvent,
+	DepartureMap,
 };
 
 export default Components;
