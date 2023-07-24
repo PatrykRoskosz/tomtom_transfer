@@ -1,4 +1,5 @@
 import React from "react";
+import dimensions from "../../../functionalities/browser-dimensions";
 
 import "./CartSidePhoto.scss";
 interface itemsType {
@@ -16,12 +17,9 @@ interface CartSidePhotoType {
 }
 
 const CartSidePhoto: React.FC<CartSidePhotoType> = props => {
-
-	
-
 	return (
 		<div className='tomtom-cart-side-photo'>
-			{props.id % 2 != 0 ? (
+			{( dimensions().width < 1080 || props.id % 2 != 0 )? (
 				<>
 					<div className='tomtom-cart-side-photo-img'>
 						<img src={props.imgSrc} alt={props.imgAlt} />
@@ -31,7 +29,14 @@ const CartSidePhoto: React.FC<CartSidePhotoType> = props => {
 						<div className='tomtom-cart-side-photo-text-description'>
 							<p>{props.text}</p>
 							<ul>
-								{props.items?.map((item: itemsType, id: number) => <li key={id}><p><i className="fa-sharp fa-solid fa-stop"></i>{item.type} <span>{item.value}</span></p></li>)}
+								{props.items?.map((item: itemsType, id: number) => (
+									<li key={id}>
+										<p>
+											<i className='fa-sharp fa-solid fa-stop'></i>
+											{item.type} <span>{item.value}</span>
+										</p>
+									</li>
+								))}
 							</ul>
 						</div>
 					</div>
@@ -43,7 +48,14 @@ const CartSidePhoto: React.FC<CartSidePhotoType> = props => {
 						<div className='tomtom-cart-side-photo-text-description'>
 							<p>{props.text}</p>
 							<ul>
-								{props.items?.map((item: itemsType, id: number) => <li key={id}><p><i className="fa-sharp fa-solid fa-stop"></i>{item.type} <span>{item.value}</span></p></li>)}
+								{props.items?.map((item: itemsType, id: number) => (
+									<li key={id}>
+										<p>
+											<i className='fa-sharp fa-solid fa-stop'></i>
+											{item.type} <span>{item.value}</span>
+										</p>
+									</li>
+								))}
 							</ul>
 						</div>
 					</div>

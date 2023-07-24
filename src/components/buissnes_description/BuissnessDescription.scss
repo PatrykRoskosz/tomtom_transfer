@@ -2,6 +2,7 @@
 @use "../../styles/vars";
 
 .buissness_description {
+	margin: 30px auto;
 	padding: 30px 10px;
 	width: 100%;
 	border-top: 0.5px solid colors.$grey-0;
@@ -16,6 +17,7 @@
 	}
 	@media screen and (min-width: map-get(vars.$breakpoints, "medium")) {
 		letter-spacing: 1.6px;
+		margin: 50px auto;
 	}
 	@media screen and (min-width: map-get(vars.$breakpoints, "xm")) {
 		font-size: 18px;

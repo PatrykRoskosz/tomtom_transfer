@@ -51,11 +51,54 @@
 			"description": "Vores tjenester er kendt for at være punktlige og pålidelige, hvilket sikrer, at vi når frem til din destination til tiden."
 		}
 	},
+	"why_choose_us_events": {
+		"one": {
+			"title": "Erfaring",
+			"description": "Vi er eksperter inden for transportbranchen med mange års erfaring."
+		},
+		"two": {
+			"title": "Personlig tilgang",
+			"description": "Vi værner om hver eneste detalje og tilpasser vores services for at imødekomme vores kunders unikke behov og forventninger."
+		},
+		"three": {
+			"title": "Køretøjsflåde",
+			"description": "Vores køretøjer er luksusbiler af højeste kvalitet, der sikrer en komfortabel og sikker rejse."
+		},
+		"four": {
+			"title": "Professionel service",
+			"description": "Vores team af chauffører og personale yder altid den højeste serviceniveau for at sikre kundetilfredshed."
+		}
+	},
 	"contact_us_today": {
 		"title": "Kontakt os i dag",
 		"description": "or at få mere at vide om vores tjenester, priser og tilgængelighed. Vores team står klar til at besvare alle dine spørgsmål og hjælpe dig med at arrangere den perfekte transport for dig eller dit firma.",
 		"one": "Vælg",
 		"two": "og rejser sikkert og komfortabelt med os!"
 	},
-	"buissness_description": "Vi er et dynamisk og erfarent transportfirma, dedikeret til at levere pålidelige transporttjenester til personer og pakker fra Polen til Danmark. Vores mission er at sikre sikre, komfortable og rettidige rejser, der opfylder alle vores kunders forventninger."
+	"buissness_description": {
+		"text": "Vi er et dynamisk og erfarent transportfirma, dedikeret til at levere pålidelige transporttjenester til personer og pakker fra Polen til Danmark. Vores mission er at sikre sikre, komfortable og rettidige rejser, der opfylder alle vores kunders forventninger."
+	},
+	"offer_events_description": "Vi er et erfarent firma, der specialiserer sig i omfattende transporttjenester til forskellige events, såsom bryllupper, 18-års fødselsdage, receptioner, polterabend og tøseaften. Derudover tilbyder vi udlejning af luksusbus med erfarne chauffører, lufthavnstransfer og medarbejdertransport for virksomheder. Uanset karakteren af dit event eller transportbehov er vi klar til at sørge for en komfortabel, sikker og uforglemmelig rejse.",
+	"offer_events": {
+		"one": {
+			"title": "Eventtransport",
+			"text": "Planlægger du dit drømmebryllup, 18-års fødselsdagsfest eller en anden betydningsfuld begivenhed? Lad os tage os af transporten for dine gæster, så du kan fokusere på glæde og festligheder. Vores elegante og komfortable køretøjer vil give en uforglemmelig oplevelse for hver deltager."
+		},
+		"two": {
+			"title": "Udlejning af luksusbus",
+			"text": "Uanset om det er en tur med venner, en familieudflugt eller en polterabend eller tøseaften - vores luksusbus med en erfaren chauffør er et fremragende valg for grupper, der ønsker komfortabel og sikker rejse."
+		},
+		"three": {
+			"title": "Lufthavnstransfer",
+			"text": "For gæster, der kommer fra fjerne steder, tilbyder vi professionel lufthavnstransfer for at sikre en behagelig rejse helt fra starten."
+		},
+		"four": {
+			"title": "Medarbejdertransport for virksomheder",
+			"text": "Sørg for dine medarbejderes komfort og problemfri transport til arbejdspladsen. Vores firma tilbyder transporttjenester til virksomheder for at øge medarbejdertilfredshed og effektivitet."
+		},
+		"five": {
+			"title": "Support til erhvervsevents",
+			"text": "Planlægger du en konference, træning eller forretningsmøde? Vores firma vil sørge for effektiv transport for deltagerne, så de kan fokusere på selve begivenheden."
+		}
+	}
 }

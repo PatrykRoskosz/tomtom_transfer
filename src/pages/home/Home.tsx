@@ -45,6 +45,7 @@ const Home = () => {
 			<Components.OurOffer />
 			<Components.AboutUsVideo />
 			<Components.WhyWorkWithUs />
+			<Components.ContactUsToDay />
 
 			{/* <Components.ArticleAndPhoto
 				title={i18n.t("pages:about_us.title")}

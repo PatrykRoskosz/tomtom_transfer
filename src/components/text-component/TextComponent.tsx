@@ -1,19 +1,22 @@
 import "./Trust.scss";
-import i18n from "../../i18n";
 
-const Trust = () => {
-	const { t } = i18n;
+export interface TextType {
+	title: string;
+	text: string;
+}
+
+const TextComponent: React.FC<TextType> = ({ title, text }) => {
 	return (
 		<div className='trust'>
 			<div className='trust-text trust-tex-one'>
-				<p>{t("components:trust.one")}</p>
+				<p>{title}</p>
 			</div>
 			<div className='trust-text trust-tex-two'>
-				<p>{t("components:trust.two")}</p>
+				<p>{text}</p>
 			</div>
 			<div className='trust-hero'></div>
 		</div>
 	);
 };
 
-export default Trust;
+export default TextComponent;

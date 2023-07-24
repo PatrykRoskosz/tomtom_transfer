@@ -1,0 +1,88 @@
+@use "../../styles/colors";
+@use "../../styles/vars";
+
+.header-event {
+	position: relative;
+	width: 100vw;
+	height: 480px;
+	color: colors.$white-100;
+	background-image: url("../../images/wedding/wedding-m.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	z-index: 0;
+
+	@media screen and (min-width: map-get(vars.$breakpoints, "small")) {
+		height: 500px;
+	}
+	@media screen and (min-width: map-get(vars.$breakpoints, "medium")) {
+		height: 600px;
+	}
+	@media screen and (min-width: map-get(vars.$breakpoints, "xm")) {
+		height: 820px;
+	}
+	@media screen and (min-width: map-get(vars.$breakpoints, "large")) {
+		height: 920px;
+		background-image: url("../../images/wedding/wedding-l.jpg");
+	}
+	.header-event-text {
+		position: absolute;
+		padding: 10px 5vw;
+		top: 10%;
+		left: 0;
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		background: rgba($color: #000000, $alpha: 0.7);
+		@media screen and (min-width: map-get(vars.$breakpoints, "small")) {
+			padding: 10px 10%;
+		}
+		@media screen and (min-width: map-get(vars.$breakpoints, "medium")) {
+			padding: 24px 8%;
+			top: 20%;
+			width: auto;
+		}
+
+		h2 {
+			font-size: 20px;
+			letter-spacing: 1.4px;
+			@media screen and (min-width: map-get(vars.$breakpoints, "medium")) {
+				font-size: 28px;
+				letter-spacing: 1.8px;
+			}
+
+			span {
+				display: inline-block;
+				margin: 5px 0;
+				padding: 5px 10px;
+				background: colors.$primary-100;
+				transform: skew(-15deg) rotate(-3deg);
+				@media screen and (min-width: map-get(vars.$breakpoints, "medium")) {
+					padding: 10px 50px;
+				}
+			}
+		}
+		p {
+			width: 240px;
+			font-size: 12px;
+			letter-spacing: 1px;
+			transform: skew(-15deg) rotate(-3deg);
+			@media screen and (min-width: map-get(vars.$breakpoints, "medium")) {
+				width: 380px;
+				font-size: 14px;
+				letter-spacing: 1.4px;
+			}
+		}
+	}
+
+	.header-event-hero {
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		background: rgba($color: #000000, $alpha: 0.3);
+		z-index: -1;
+	}
+}
