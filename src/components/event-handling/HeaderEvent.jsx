@@ -1,13 +1,16 @@
 import "./HeaderEvent.scss";
+import i18n from "../../i18n";
 
 const HeaderEvent = () => {
+	const { t } = i18n;
+
 	return (
 		<div className='header-event'>
 			<div className='header-event-text'>
 				<h2>
-					Witamy w <br/><span>TomTomTransfer</span>
+					{t("components:event_header.one")} <br/><span>TomTomTransfer</span>
 				</h2>
-				<p>Twoim zaufanym partnerze w transportowych usługach eventowych!</p>
+				<p>{t("components:event_header.two")}</p>
 			</div>
 
 			<div className='header-event-hero'></div>

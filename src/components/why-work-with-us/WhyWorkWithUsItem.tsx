@@ -15,7 +15,7 @@ const WhyWorkWithUsItem: React.FC<WhyWorkWithUsItemType> = ({
 	children,
 }) => {
 	const [value, setValue] = useState(parseInt(fromValue));
-	const interval = 50;
+	const interval = 5000;
 	const toValueNumber = parseInt(toValue);
 	let increasingValue = useCallback(() => {
 		setValue(val => val + 1);
@@ -53,20 +53,4 @@ const WhyWorkWithUsItem: React.FC<WhyWorkWithUsItemType> = ({
 
 export default WhyWorkWithUsItem;
 
-// let valueDisplays = document.querySelectorAll(
-// 	".why-work-with-us-reasons-item-value"
-// );
-// // let interval = 4000;
-// valueDisplays.forEach(valueDisplays => {
-// 	let startValue = 0;
-// 	let endValue = parseInt(valueDisplays.getAttribute("data-val") as string);
 
-// 	let duration = Math.floor(interval / endValue);
-// 	let counter = setInterval(() => {
-// 		startValue += 1;
-// 		valueDisplays.textContent = startValue.toString();
-// 		if (startValue == endValue) {
-// 			clearInterval(counter);
-// 		}
-// 	}, duration);
-// });

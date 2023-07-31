@@ -2,9 +2,10 @@
 	"navigation": {
 		"home": "Home",
 		"car_rental": "Car rental",
-		"trips_route": "trips & route",
-		"Transportation_of_events": "Transportation of events",
-		"contact": "Contact"
+		"trips_route": "Journeye",
+		"Transportation_of_events": "Events",
+		"contact": "Contact",
+		"statute": "Statute"
 	},
 	"header": {
 		"title": "Safe travel from Poland to Copenhagen",
@@ -100,5 +101,43 @@
 			"title": "Business Event Support",
 			"text": "Organizing a conference, training, or business meeting? Our company will provide efficient transportation for participants, allowing them to focus on the essence of the event."
 		}
+	},
+
+	"rental_car-text": "We are a professional vehicle rental company offering comfortable and spacious 9-seater minibuses for rent. Regardless of the occasion, our vehicles are the perfect solution for groups who want to travel together in a comfortable way.",
+	"why-work-wit-us": {
+		"title": "Why us",
+		"satisfied_customers": "Satisfied customers",
+		"years_of_experience": "Years of experience",
+		"thousands_of_kilometers_traveled": "Thousands of kilometers traveled",
+		"number_of_trips_made": "Number of trips made"
+	},
+	"our_offer": {
+		"title": "Our offer",
+		"transport_of_people": "Transport of people",
+		"event_handling": "Event handling",
+		"shipments": "Shipments",
+		"car_rental": "Car rental",
+		"details": "DETAILS"
+	},
+	"phone": "Phone",
+	"departure_map": {
+		"title": "Our route"
+	},
+	"table": {
+		"departure": "Departure",
+		"poland": "Poland",
+		"denmark": "Denmark",
+		"monday":"Monday",
+		"tuesday": "Tuesday",
+		"wednesday": "Wednesday",
+		"thursday": "Thursday",
+		"friday": "Friday",
+		"saturday":"Saturday",
+		"sunday":"Sunday"
+	},
+	"event_header": {
+		"one": "Welcome in",
+		"two": "Your trusted event organization partner!"
+
 	}
 }

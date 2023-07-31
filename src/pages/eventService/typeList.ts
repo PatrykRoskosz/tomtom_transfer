@@ -1,5 +1,11 @@
 import { Item } from "../../components/why-choose-us/WhyChooseUs";
 import i18n from "../../i18n";
+import kissWedding from '../../images/wedding/kiss-wedding.jpg'
+// import blackCar from '../../images/cars/traficBlack.png';
+import airport from '../../images/ourOffer/airport.jpg'
+import workers from '../../images/ourOffer/workers.jpg'
+import meeting from '../../images/ourOffer/meeting.jpg'
+import blackCar from '../../images/ourOffer/blackCar.jpeg'
 const { t } = i18n;
 
 export const whyUs: Item[] = [
@@ -29,7 +35,7 @@ export const offer = [
 		id: 1,
 		title: t("components:offer_events.one.title"),
 		text: t("components:offer_events.one.text"),
-		imgSrc: "",
+		imgSrc: kissWedding,
 		imgAlt: "",
 		items: [],
 	},
@@ -37,7 +43,7 @@ export const offer = [
 		id: 2,
 		title: t("components:offer_events.two.title"),
 		text: t("components:offer_events.two.text"),
-		imgSrc: "",
+		imgSrc: blackCar,
 		imgAlt: "",
 		items: [],
 	},
@@ -45,7 +51,7 @@ export const offer = [
 		id: 3,
 		title: t("components:offer_events.three.title"),
 		text: t("components:offer_events.three.text"),
-		imgSrc: "",
+		imgSrc: airport,
 		imgAlt: "",
 		items: [],
 	},
@@ -53,7 +59,7 @@ export const offer = [
 		id: 4,
 		title: t("components:offer_events.four.title"),
 		text: t("components:offer_events.four.text"),
-		imgSrc: "",
+		imgSrc: workers,
 		imgAlt: "",
 		items: [],
 	},
@@ -61,7 +67,7 @@ export const offer = [
 		id: 5,
 		title: t("components:offer_events.five.title"),
 		text: t("components:offer_events.five.text"),
-		imgSrc: "",
+		imgSrc: meeting,
 		imgAlt: "",
 		items: [],
 	},

@@ -3,6 +3,7 @@ import i18n from "../../i18n";
 import opelLightGrey from "../../images/cars/opelLightGrey.jpg";
 import SmallCard from "../../components/carts/SmallCard/SmallCard";
 import Components from "../../components";
+import Header from "../../components/header/Header";
 import "./Home.scss";
 
 
@@ -42,6 +43,7 @@ const Home = () => {
 
 	return (
 		<section className='home'>
+			<Header />
 			<Components.OurOffer />
 			<Components.AboutUsVideo />
 			<Components.WhyWorkWithUs />

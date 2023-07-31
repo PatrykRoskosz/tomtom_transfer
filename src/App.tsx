@@ -8,6 +8,7 @@ import RoutesPage from "./pages/routesPage/RoutesPage";
 import EventService from "./pages/eventService/EventService";
 import ErrorPage from "./pages/errorPage/ErrorPage";
 import ContactPage from "./pages/contactPage/ContactPage";
+import StatutePage from "./pages/statutePage/StatutePage";
 
 import "./App.scss";
 
@@ -23,6 +24,7 @@ const App = () => {
 				{ path: "routes", element: <RoutesPage /> },
 				{ path: "event-service", element: <EventService /> },
 				{ path: "contact", element: <ContactPage /> },
+				{ path: "statute", element: <StatutePage /> },
 			],
 		},
 	]);

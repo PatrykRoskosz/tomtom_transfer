@@ -1,13 +1,15 @@
-import './DepartureMap.scss'
+import "./DepartureMap.scss";
 import { FaLocationDot } from "react-icons/fa6";
 import mapsImage from "../../images/maps/mapaformat.png";
+import i18n from "../../i18n";
 
 const DepartureMap = () => {
+	const { t } = i18n;
 	return (
 		<div className='the-course-of-the-route-wrapper'>
 			<div className='the-course-of-the-route'>
-				<h1>Nasza trasa</h1>
-				
+				<h1>{t("components:departure_map.title")}</h1>
+
 				<ul>
 					<li>
 						<FaLocationDot className='i red' />
@@ -66,11 +68,10 @@ const DepartureMap = () => {
 						Copenhagen
 					</li>
 				</ul>
-                
 			</div>
-            <div className='the-course-of-the-route-map'>
-					<img src={mapsImage} alt='Mapa' />
-				</div>
+			<div className='the-course-of-the-route-map'>
+				<img src={mapsImage} alt='Mapa' />
+			</div>
 		</div>
 	);
 };

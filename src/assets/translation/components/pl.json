@@ -2,9 +2,10 @@
 	"navigation": {
 		"home": "Strona główna",
 		"car_rental": "Wyporzyczalnia",
-		"trips_route": "Wyjazdy & Trasa",
-		"Transportation_of_events": "Transportowa obsługa eventów",
-		"contact": "Kontakt"
+		"trips_route": "Podróż",
+		"Transportation_of_events": "Wydarzenia",
+		"contact": "Kontakt",
+		"statute": "Regulamin"
 	},
 	"header": {
 		"title": "Bezpieczne podróże z Polski do Kopenhagi",
@@ -101,5 +102,42 @@
 			"title": "Obsługa wydarzeń biznesowych",
 			"text": "Organizujesz konferencję, szkolenie czy spotkanie biznesowe? Nasza firma zapewni sprawny transport dla uczestników, co pozwoli im skoncentrować się na samej istocie wydarzenia."
 		}
+	},
+	"rental_car-text": "Jesteśmy profesjonalną wypożyczalnią pojazdów, która oferuje komfortowe i przestronne busy 9-osobowe do wynajęcia. Bez względu na okazję, nasze pojazdy są idealnym rozwiązaniem dla grup, które chcą podróżować razem w komfortowy sposób.",
+	"why-work-wit-us": {
+		"title": "Dlaczego my",
+		"satisfied_customers": "Zadowolonych klientów",
+		"years_of_experience": "Lat Doświadczenia",
+		"thousands_of_kilometers_traveled": "Tysiecy przejechanych kilometrów",
+		"number_of_trips_made": "Odbytych przejazdów"
+	},
+	"our_offer": {
+		"title": "Nasza oferta",
+		"transport_of_people": "Transport osób",
+		"event_handling": "Obsługa wydarzeń",
+		"shipments": "Przesyłki",
+		"car_rental": "wypożyczalnia samochodów",
+		"details": "SZCZEGÓŁY"
+	},
+	"phone": "Telefon",
+	"departure_map": {
+		"title": "Nasza trasa"
+	},
+	"table": {
+		"departure": "Wyjazd",
+		"poland": "Polska",
+		"denmark": "Dania",
+		"monday":"Poniedziałek",
+		"tuesday": "Wtorek",
+		"wednesday": "Środa",
+		"thursday": "Czwartek",
+		"friday": "Piątek",
+		"saturday":"Sobota",
+		"sunday":"Niedziela"
+	},
+	"event_header": {
+		"one": "Witamy w",
+		"two": "Twój zaufany partner w organizacji wydarzeń!"
+
 	}
 }

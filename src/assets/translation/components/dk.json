@@ -2,9 +2,10 @@
 	"navigation": {
 		"home": "Hjem",
 		"car_rental": "Biludlejning",
-		"trips_route": "Ture & rute",
-		"Transportation_of_events": "Transport af arrangementer",
-		"contact": "Kontakt"
+		"trips_route": "Rejse",
+		"Transportation_of_events": "Begivenheder",
+		"contact": "Kontakt",
+		"statute": "vedtægt"
 	},
 	"header": {
 		"title": "Sikker rejse fra Polen til København",
@@ -100,5 +101,42 @@
 			"title": "Support til erhvervsevents",
 			"text": "Planlægger du en konference, træning eller forretningsmøde? Vores firma vil sørge for effektiv transport for deltagerne, så de kan fokusere på selve begivenheden."
 		}
+	},
+	"rental_car-text": "Vi er et professionelt køretøjsudlejningsfirma, der tilbyder komfortable og rummelige 9-personers minibusser til leje. Uanset lejligheden er vores køretøjer den perfekte løsning for grupper, der ønsker at rejse sammen på en komfortabel måde.",
+	"why-work-wit-us": {
+		"title": "Hvorfor os",
+		"satisfied_customers": "Tilfredse kunder",
+		"years_of_experience": "Års erfaring",
+		"thousands_of_kilometers_traveled": "Rejste tusindvis af kilometer",
+		"number_of_trips_made": "Antal gennemførte ture"
+	},
+	"our_offer": {
+		"title": "Vores tilbud",
+		"transport_of_people": "Transport af mennesker",
+		"event_handling": "Begivenhedshåndtering",
+		"shipments": "Forsendelser",
+		"car_rental": "Biludlejning",
+		"details": "DETALJER"
+	},
+	"phone": "Telefon",
+	"departure_map": {
+		"title": "Vores rute"
+	},
+	"table": {
+		"departure": "Afgang",
+		"poland": "Polen",
+		"denmark": "Denmark",
+		"monday":"Mondag",
+		"tuesday": "Tirsdag",
+		"wednesday": "Onsdag",
+		"thursday": "Torsdag",
+		"friday": "Fredag",
+		"saturday":"​​Lørdag",
+		"sunday":"Søndag"
+	},
+	"event_header": {
+		"one": "Velkommen ind",
+		"two": "Din betroede partner til eventorganisation!"
+
 	}
 }

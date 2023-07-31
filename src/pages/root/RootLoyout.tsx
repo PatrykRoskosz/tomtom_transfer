@@ -3,13 +3,14 @@ import Header from "../../components/header/Header";
 import Wrapper from "../../components/wrapper/Wrapper";
 import Component from "../../components";
 import Navigation from "../../components/navigation/Navigation";
+import Logo from "../../components/logo/Logo";
 
 
 const RootLoyout = () => {
 	return (
 		<>
-		
-			<Header />
+			<Logo />
+			{/* <Header /> */}
 			<Navigation />
 			<Component.BurgerButton />
 			<Wrapper>

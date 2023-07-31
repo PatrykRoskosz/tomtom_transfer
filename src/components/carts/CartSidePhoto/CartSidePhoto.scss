@@ -56,22 +56,34 @@
 			padding-top: 20px;
 			color: colors.$black;
 			> p{
-				padding: 10px 80px 20px 30px;
+				padding: 10px;
 				letter-spacing: 2px;
+				@media screen and (min-width: map-get(vars.$breakpoints, "small")) {
+					padding: 10px 80px 20px 30px;
+					letter-spacing: 2px;
+				}
 			}
 
 			ul {
 				display: grid;
-				grid-template-columns: 1fr 1fr;
+				grid-template-columns: 1fr ;
 				width: 100%;
-				padding-top: 20px;
-				// padding-left: 20px;
+				padding-top: 0;
+				@media screen and (min-width: map-get(vars.$breakpoints, "medium")) {
+					padding-top: 20px;
+					grid-template-columns: 1fr 1fr;
+				}
+			
 				li {
 					list-style: none;
 					padding: 8px 0;
 					p {
+						font-size: 12px;
 						font-weight: 700;
 						text-transform: uppercase;
+						@media screen and (min-width: map-get(vars.$breakpoints, "small")) {
+							font-size: 16px;
+						}
 						i {
 							margin-right: 20px;
 							font-size: 12px;

@@ -1,27 +1,32 @@
 import { FaRegSquareCheck, FaRegRectangleXmark } from "react-icons/fa6";
 import "./TripTable.scss";
 import dimensions from "../../functionalities/browser-dimensions";
+import i18n from "../../i18n";
+
+
 
 const TripTable = () => {
+	const { t } = i18n;
+
 	return (
 		<>
 			{dimensions().width > 480 ? (
 				<table>
 					<thead>
 						<tr>
-							<th>Wyjzad</th>
-							<th>Poniedziałek</th>
-							<th>Wtorek</th>
-							<th>Środa</th>
-							<th>Czwartek</th>
-							<th>Piątek</th>
-							<th>Sobota</th>
-							<th>Niedziela</th>
+							<th>{t("components:table.departure")}</th>
+							<th>{t("components:table.monday")}</th>
+							<th>{t("components:table.tuesday")}</th>
+							<th>{t("components:table.wednesday")}</th>
+							<th>{t("components:table.thursday")}</th>
+							<th>{t("components:table.friday")}</th>
+							<th>{t("components:table.saturday")}</th>
+							<th>{t("components:table.sunday")}</th>
 						</tr>
 					</thead>
 					<tbody>
 						<tr>
-							<td>Polska</td>
+							<td>{t("components:table.poland")}</td>
 							<td>
 								<FaRegRectangleXmark className='i red' />
 							</td>
@@ -45,7 +50,7 @@ const TripTable = () => {
 							</td>
 						</tr>
 						<tr>
-							<td>Dania</td>
+							<td>{t("components:table.denmark")}</td>
 							<td>
 								<FaRegSquareCheck className='i green' />
 							</td>
@@ -74,14 +79,14 @@ const TripTable = () => {
 				<table>
 					<thead>
 						<tr>
-							<th>Wyjzad</th>
-							<th>Polska</th>
-							<th>Dannia</th>
+							<th>{t("components:table.departure")}</th>
+							<th>{t("components:table.poland")}</th>
+							<th>{t("components:table.denmark")}</th>
 						</tr>
 					</thead>
 					<tbody>
 						<tr>
-							<td>Poniedziałek</td>
+							<td>{t("components:table.monday")}</td>
 							<td>
 								<FaRegRectangleXmark className='i red' />
 							</td>
@@ -90,7 +95,7 @@ const TripTable = () => {
 							</td>
 						</tr>
 						<tr>
-							<td>Wtore</td>
+							<td>{t("components:table.tuesday")}</td>
 							<td>
 								<FaRegRectangleXmark className='i red' />
 							</td>
@@ -99,7 +104,7 @@ const TripTable = () => {
 							</td>
 						</tr>
 						<tr>
-							<td>Środa</td>
+							<td>{t("components:table.wednesday")}</td>
 							<td>
 								<FaRegSquareCheck className='i green' />
 							</td>
@@ -108,7 +113,7 @@ const TripTable = () => {
 							</td>
 						</tr>
 						<tr>
-							<td>Czwartek</td>
+							<td>{t("components:table.thursday")}</td>
 							<td>
 								<FaRegSquareCheck className='i green' />
 							</td>
@@ -117,7 +122,7 @@ const TripTable = () => {
 							</td>
 						</tr>
 						<tr>
-							<td>Piątek</td>
+							<td>{t("components:table.friday")}</td>
 							<td>
 								<FaRegRectangleXmark className='i red' />
 							</td>
@@ -126,7 +131,7 @@ const TripTable = () => {
 							</td>
 						</tr>
 						<tr>
-							<td>Sobota</td>
+							<td>{t("components:table.saturday")}</td>
 							<td>
 								<FaRegRectangleXmark className='i  red' />
 							</td>
@@ -135,7 +140,7 @@ const TripTable = () => {
 							</td>
 						</tr>
 						<tr>
-							<td>Niedziela</td>
+							<td>{t("components:table.sunday")}</td>
 							<td>
 								<FaRegSquareCheck className='i green' />
 							</td>

@@ -1,5 +1,8 @@
 import Components from "../../components";
 import CartSidePhoto from "../../components/carts/CartSidePhoto/CartSidePhoto";
+import trip from '../../images/why-us/trip.jpg'
+import delivery from '../../images/why-us/delivery.jpg'
+import workers from '../../images/ourOffer/workers.jpg'
 import i18n from "../../i18n";
 import "./RoutesPage.scss";
 import DepartureMap from "../../components/departure-map/DepartureMap";
@@ -11,7 +14,7 @@ const RoutesPage = () => {
 			id: 1,
 			title: t("components:transport_offer.one.title"),
 			text: t("components:transport_offer.one.text"),
-			imgSrc: "",
+			imgSrc: trip,
 			imgAlt: "",
 			items: [],
 		},
@@ -19,15 +22,15 @@ const RoutesPage = () => {
 			id: 2,
 			title: t("components:transport_offer.two.title"),
 			text: t("components:transport_offer.two.text"),
-			imgSrc: "",
-			imgAlt: "",
+			imgSrc: delivery,
+			imgAlt: '',
 			items: [],
 		},
 		{
 			id: 3,
 			title: t("components:transport_offer.three.title"),
 			text: t("components:transport_offer.three.text"),
-			imgSrc: "",
+			imgSrc: workers,
 			imgAlt: "",
 			items: [],
 		},

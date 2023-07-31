@@ -6,7 +6,6 @@
 	width: 100%;
 	display: flex;
 	flex-direction: column;
-	// align-items: center;
 	justify-content: center;
 	@media screen and (min-width: map-get(vars.$breakpoints, "small")) {
 		padding: 20px;
@@ -107,13 +106,13 @@
 					right: 10px;
 					border-radius: 5px;
 					color: orange;
-					background: rgba($color: #000000, $alpha: .4);
+					background: rgba($color: #000000, $alpha: .7);
 					border: 2px solid orange;
 					text-decoration: none;
 					text-transform: uppercase;
 					font-size: 12px;
 					font-weight: bold;
-					transition: background 0.3s, color 1s;
+					transition: background 0.3s, color .5s;
 					z-index: 2;
 					@media screen and (min-width: map-get(vars.$breakpoints, "medium")) {
 						bottom: 15px;

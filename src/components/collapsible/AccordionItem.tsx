@@ -13,7 +13,7 @@ export interface AccordionItemTypeWidthClick {
 	id: number;
 	title: string;
 	description: string;
-	iconClassName: string;
+	iconClassName?: string;
 	show: null | number;
 	click: (el: number)=> void;
 }
