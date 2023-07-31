@@ -1,30 +1,47 @@
 import "./ContactPage.scss";
 import blackTrafic from "../../images/cars/traficBlack.png";
+import Components from "../../components";
+import { FaPhone, FaEnvelope, FaBuildingColumns } from "react-icons/fa6";
 
 const ContactPage = () => {
 	return (
-		<section className='tomtom-section-contact'>
-			<h1>Kontakt</h1>
-			<div className='frame'>
-				<div className='contact'>
-					<p>
-						<i className='fa-sharp fa-solid fa-location-dot'></i> ul.jasjd{" "}
-						<br /> 00-000 miasto <br />
-						kraj
-					</p>
-					<p>
-						<i className='fa-sharp fa-solid fa-phone'></i>
-						<a href=''>+48 000-000-000</a>
-					</p>
-					<p>
-						<i className='fa-sharp fa-solid fa-envelope'></i> laslaslas@lals.com
-					</p>
-					<div className='contact-photo'>
-						<img src={blackTrafic} alt='zdięcie' />
+		<>
+			<div>
+				<section className='tomtom-section-contact'>
+					<h1>Kontakt</h1>
+					<div className='frame'>
+						<div className='contact'>
+							<div className="p">
+								<div className='round'>
+									<FaPhone className='i' />
+								</div>
+								<a href='tel:+48539863374'>+48 539 863 374</a>
+							</div>
+							<div className="p">
+								<div className='round'>
+									<FaPhone className='i' />
+								</div>
+								<a href='tel:+48880743030 '>+48 880 743 030</a>
+							</div>
+							<div className="p">
+								<div className='round'>
+									<FaEnvelope className='i' />
+								</div>
+								<a
+									href='mailto:transport.rp77@gmail.com'
+									className='small-text'>
+									transport.rp77@gmail.com
+								</a>
+							</div>
+							<div className='contact-photo'>
+								<img src={blackTrafic} alt='zdięcie' />
+							</div>
+						</div>
 					</div>
-				</div>
+				</section>
+				<Components.ContactUsToDay />
 			</div>
-		</section>
+		</>
 	);
 };
 

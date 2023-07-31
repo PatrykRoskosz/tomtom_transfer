@@ -14,10 +14,12 @@ import AboutUsVideo from "./about-us-video/AboutUsVideo";
 import WhyWorkWithUs from "./why-work-with-us/WhyWorkWithUs";
 import WhyChooseUs from "./why-choose-us/WhyChooseUs";
 import Welcome from "./welcome/Welcome";
-import Trust from "./trust/Trust";
+import TextComponent from "./text-component/TextComponent";
 import ContactUsToDay from "./contact-us-today/ContactUsToDay";
 import TripTable from "./table/TripTable";
-import BuissnessDescription from "./buissnes_description/BuissnessDescription";
+import BuissnessDescription from './buissnes_description/BuissnessDescription'
+import HeaderEvent from "./event-handling/HeaderEvent";
+import DepartureMap from "./departure-map/DepartureMap";
 
 const Components = {
 	Accordion,
@@ -36,10 +38,12 @@ const Components = {
 	WhyWorkWithUs,
 	Welcome,
 	WhyChooseUs,
-	Trust,
+	TextComponent,
 	ContactUsToDay,
 	TripTable,
 	BuissnessDescription,
+	HeaderEvent,
+	DepartureMap,
 };
 
 export default Components;

@@ -26,7 +26,7 @@
 		display: flex;
 		flex-direction: row;
 		justify-content: flex-end;
-		background: rgba($color: #000000, $alpha: 0.65);
+		background: rgba($color: #000000, $alpha: 0.8);
 		transform: translateX(0%);
 	}
 	a {
@@ -63,7 +63,7 @@
 				z-index: 10000;
 
 				&:hover {
-					color: colors.$primary-100;
+					color: colors.$primary-300;
 				}
 				&.active {
 					font-size: 20px;
@@ -89,8 +89,8 @@
 		
 			}
 			&:hover {
-				color: colors.$primary-100;
-				border: 1px solid colors.$primary-100;
+				color: colors.$primary-300;
+				border: 1px solid colors.$primary-300;
 				transform: scale(1.1);
 			}
 		}
@@ -105,7 +105,7 @@
 			border-radius: 5px;
 			overflow: hidden;
 			@media screen and (min-width: map-get(vars.$breakpoints, "medium")) {
-				top: 120%;
+				top: 135%;
 			}
 
 			li {
@@ -117,7 +117,7 @@
 					padding: 10px;
 					width: 100%;
 					border: none;
-					background-color: #f3f3f323;
+					background-color: #4e4e4e8a;
 					color: colors.$light;
 					cursor: pointer;
 					&:hover {

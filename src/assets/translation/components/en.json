@@ -2,9 +2,10 @@
 	"navigation": {
 		"home": "Home",
 		"car_rental": "Car rental",
-		"trips_route": "trips & route",
-		"Transportation_of_events": "Transportation of events",
-		"contact": "Contact"
+		"trips_route": "Journeye",
+		"Transportation_of_events": "Events",
+		"contact": "Contact",
+		"statute": "Statute"
 	},
 	"header": {
 		"title": "Safe travel from Poland to Copenhagen",
@@ -51,11 +52,92 @@
 			"description": " Our services are known for being punctual and reliable, ensuring that we arrive at your destination on time."
 		}
 	},
+	"why_choose_us_events": {
+		"one": {
+			"title": "Experience",
+			"description": "We are transportation industry experts with many years of experience."
+		},
+		"two": {
+			"title": "Personalized Approach",
+			"description": "We care about every detail, tailoring our services to meet the unique needs and expectations of our clients."
+		},
+		"three": {
+			"title": "Fleet of Vehicles",
+			"description": " Our vehicles are top-of-the-line luxury cars, ensuring a comfortable and safe journey."
+		},
+		"four": {
+			"title": "Professional Service",
+			"description": " Our team of drivers and staff always delivers the highest level of service to ensure customer satisfaction."
+		}
+	},
 	"contact_us_today": {
 		"title": "Get in touch with us today",
 		"description": "to learn more about our services, pricing, and availability. Our team will be delighted to answer all your questions and help you arrange the perfect transportation for yourself or your company.",
 		"one": "Choose",
 		"two": "and travel safely and comfortably with us!"
 	},
-	"buissness_description": "We are a dynamic and experienced transport company, dedicated to providing reliable transportation services for people and packages from Poland to Denmark. Our mission is to ensure safe, comfortable, and timely journeys that meet all our customers' expectations."
+	"buissness_description": {
+		"text": "We are a dynamic and experienced transport company, dedicated to providing reliable transportation services for people and packages from Poland to Denmark. Our mission is to ensure safe, comfortable, and timely journeys that meet all our customers' expectations."
+	},
+	"offer_events_description": "We are an experienced company specializing in comprehensive transportation services for various events, such as weddings, 18th birthday parties, receptions, bachelor and bachelorette nights. Additionally, we offer luxury bus rental with experienced drivers, airport transfers, and employee transportation services for companies. Regardless of the nature of your event or transportation needs, we are ready to provide a comfortable, safe, and unforgettable journey.",
+	"offer_events": {
+		"one": {
+			"title": "Event Transportation",
+			"text": "Planning your dream wedding, 18th birthday party, or any other significant event? Let us take care of your guests' transportation so you can focus on joy and celebration. Our elegant and comfortable vehicles will provide an unforgettable experience for every attendee."
+		},
+		"two": {
+			"title": "Luxury Bus Rental",
+			"text": "Whether it's a trip with friends, a family outing, or a bachelor or bachelorette night - our luxury bus with an experienced driver is an excellent choice for groups seeking comfortable and safe travel."
+		},
+		"three": {
+			"title": "Airport Transfers",
+			"text": "For guests arriving from distant places, we offer professional airport transfers to ensure a comfortable journey right from the start."
+		},
+		"four": {
+			"title": "Employee Transportation for Companies",
+			"text": "Ensure your employees' comfort and hassle-free travel to the workplace. Our corporate transportation services will enhance employee satisfaction and efficiency."
+		},
+		"five": {
+			"title": "Business Event Support",
+			"text": "Organizing a conference, training, or business meeting? Our company will provide efficient transportation for participants, allowing them to focus on the essence of the event."
+		}
+	},
+
+	"rental_car-text": "We are a professional vehicle rental company offering comfortable and spacious 9-seater minibuses for rent. Regardless of the occasion, our vehicles are the perfect solution for groups who want to travel together in a comfortable way.",
+	"why-work-wit-us": {
+		"title": "Why us",
+		"satisfied_customers": "Satisfied customers",
+		"years_of_experience": "Years of experience",
+		"thousands_of_kilometers_traveled": "Thousands of kilometers traveled",
+		"number_of_trips_made": "Number of trips made"
+	},
+	"our_offer": {
+		"title": "Our offer",
+		"transport_of_people": "Transport of people",
+		"event_handling": "Event handling",
+		"shipments": "Shipments",
+		"car_rental": "Car rental",
+		"details": "DETAILS"
+	},
+	"phone": "Phone",
+	"departure_map": {
+		"title": "Our route"
+	},
+	"table": {
+		"departure": "Departure",
+		"poland": "Poland",
+		"denmark": "Denmark",
+		"monday":"Monday",
+		"tuesday": "Tuesday",
+		"wednesday": "Wednesday",
+		"thursday": "Thursday",
+		"friday": "Friday",
+		"saturday":"Saturday",
+		"sunday":"Sunday"
+	},
+	"event_header": {
+		"one": "Welcome in",
+		"two": "Your trusted event organization partner!"
+
+	}
 }

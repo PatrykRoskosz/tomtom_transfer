@@ -56,15 +56,32 @@
 		}
 	}
 	.contact-us-today-choose-us {
+		position: relative;
 		margin: 40px 0;
+		padding: 70px 0;
 		width: 100%;
 		display: flex;
 		align-items: center;
 		justify-content: center;
+		background-image: url("../../images/business/cruise-m.jpg");
+		background-position: center;
+		background-size: cover;
+		background-repeat: no-repeat;
+		z-index: 0;
+		.contact-us-today-choose-us-hero {
+			position: absolute;
+			top: 0;
+			right: 0;
+			bottom: 0;
+			left: 0;
+			background: rgba($color: #000000, $alpha: 0.5);
+			z-index: -1;
+		}
 		p {
 			font-size: 14px;
 			font-weight: bold;
 			text-align: center;
+			color: colors.$white-100;
 			letter-spacing: 1px;
 			@media screen and (min-width: map-get(vars.$breakpoints, "small")) {
 				font-size: 16px;
@@ -84,16 +101,68 @@
 				background: colors.$primary-100;
 				transform: skew(-15deg) rotate(-3deg);
 				@media screen and (min-width: map-get(vars.$breakpoints, "small")) {
-                    padding: 8px;
+					padding: 8px;
 					font-size: 18px;
-                    letter-spacing: 1.4px;
+					letter-spacing: 1.4px;
 				}
 				@media screen and (min-width: map-get(vars.$breakpoints, "medium")) {
-                    margin: 25px 0;
-                    padding: 10px 20px;
+					margin: 25px 0;
+					padding: 10px 20px;
 					font-size: 24px;
-                    letter-spacing: 1.6px;
+					letter-spacing: 1.6px;
 				}
+			}
+		}
+	}
+	.contact-us-today-media {
+		margin: 40px 0 20px;
+		padding: 0;
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
+		@media screen and (min-width: map-get(vars.$breakpoints, "small")) {
+			padding-left: 50px;
+			margin: 80px 0 40px;
+		}
+		@media screen and (min-width: map-get(vars.$breakpoints, "medium")) {
+			padding: 0;
+			flex-direction: row;
+			justify-content: space-around;
+		}
+		a {
+			margin: 10px 0;
+			display: flex;
+			flex-direction: row;
+			align-items: center;
+			justify-content: flex-start;
+			text-decoration: none;
+			span {
+				font-size: 14px;
+				color: colors.$black;
+				@media screen and (min-width: map-get(vars.$breakpoints, "small")) {
+					font-size: 16px;
+				}
+			}
+			.round {
+				margin-right: 5px;
+				width: 30px;
+				height: 30px;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				border-radius: 50%;
+				color: colors.$white-100;
+				@media screen and (min-width: map-get(vars.$breakpoints, "small")) {
+					width: 40px;
+					height: 40px;
+				}
+			}
+			.phone {
+				background: green;
+			}
+			.email {
+				background: royalblue;
 			}
 		}
 	}

@@ -1,4 +1,5 @@
 import CartSidePhoto from "../../components/carts/CartSidePhoto/CartSidePhoto";
+import Components from "../../components";
 import traficBlack from "../../images/cars/traficBlack.png";
 import traficGrey from "../../images/cars/traficGrey.png";
 import vivaro from "../../images/cars/vivaro.png";
@@ -112,6 +113,7 @@ const RentalCar = () => {
 	return (
 		<section className='tomtom-section-our-cars'>
 			<h1>Nasze auta</h1>
+			<Components.BuissnessDescription text={t("components:rental_car-text")}/>
 			<ul>
 				{cars.map(car => (
 					<CartSidePhoto
@@ -125,6 +127,7 @@ const RentalCar = () => {
 					/>
 				))}
 			</ul>
+			<Components.ContactUsToDay />
 		</section>
 	);
 };

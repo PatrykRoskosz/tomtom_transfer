@@ -20,9 +20,9 @@
 		h3 {
 			margin: 20px 0;
 			padding: 10px 20px;
-			border-radius: 5px;
 			background: colors.$primary-100;
 			color: colors.$white-100;
+			transform: skew(-15deg) rotate(-3deg);
 			font-size: 24px;
 		}
 	}
@@ -55,6 +55,7 @@
 				margin: 10px 0;
 				font-size: 20px;
 				font-weight: bold;
+				text-align: center;
 			}
 			p {
 				padding: 10px 0;

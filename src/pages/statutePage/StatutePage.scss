@@ -1,0 +1,39 @@
+@use "src/styles/colors";
+@use "src/styles/vars";
+
+.statute-section{
+    margin-top: 70px;
+    width: 100%;
+
+    h1{
+        margin: 20px 0;
+        padding: 20px 10px;
+        width: 100%;
+        text-align: center;
+        border-bottom: 1px solid black;
+    }
+
+    h2 {
+        width: 100%;
+        margin-bottom: 20px;
+        padding: 20px 20px;
+        border-bottom: 1px solid black;
+    }
+    p {
+        text-align: justify;
+        padding:10px 10px;
+        margin-bottom: 10px;
+        font-size: 16px;
+        letter-spacing: 1.2px;
+        line-height: 22px;
+        @media screen and (min-width: map-get(vars.$breakpoints, "medium")) {
+            font-size: 18px;
+            letter-spacing: 1.4px;
+            line-height: 26px;
+            padding:10px 60px;
+		}
+        span {
+            font-weight: bold; margin-right: 5px;
+        }
+    }
+}

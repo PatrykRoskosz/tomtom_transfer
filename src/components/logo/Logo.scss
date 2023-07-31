@@ -4,22 +4,84 @@
 .logo {
 	display: flex;
 	align-items: center;
+	justify-content: space-between;
 	width: 100vw;
-	height: 10vh;
+	height: 65px;
 	padding-left: 10px;
 	background: #000;
-
-    @media screen and (min-width: map-get(vars.$breakpoints, "medium")) {
-        height: 15vh;
-        padding-left: 40px;
-    }
+	a {
+		padding: 0; margin: 0; 
+		color: none;
+	}
+	@media screen and (min-width: map-get(vars.$breakpoints, "medium")) {
+		height: 15vh;
+		padding-left: 40px;
+	}
 
 	h1 {
+		padding: 5px 5px;
 		font-size: 14px;
 		color: whitesmoke;
+		background: royalblue;
+		transform: skew(-15deg) rotate(-3deg);
 
 		@media screen and (min-width: map-get(vars.$breakpoints, "medium")) {
+			padding: 10px 20px;
 			font-size: 30px;
+		}
+	}
+
+	.logo-link-fb {
+		padding-top: 145px;
+		padding-right: 20px;
+		text-decoration: none;
+		z-index: 100;
+		@media screen and (min-width: map-get(vars.$breakpoints, "small")) {
+			padding-top: 0;
+			padding-right: 100px;
+		}
+
+		span {
+			position: relative;
+			width: 50px;
+			height: 50px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			border-radius: 50%;
+			z-index: 1;
+			
+			&:hover .logo-color{ 
+				background: colors.$primary-200;
+			}
+			&:hover .i{ 
+				color: colors.$white;
+			}
+			
+
+			
+			
+
+			.logo-color {
+				position: absolute;
+				top: 2px;
+				left: 2px;
+				right: 2px;
+				bottom: 2px;border-radius: 50%;
+				background: colors.$white;
+				transform: background .3s ;
+				z-index: 0;
+			}
+
+			.i {
+				margin: 0;
+				padding: 0;
+				font-size: 50px;
+				border-radius: 50%;
+				color: colors.$primary-200;
+				transition: color .3s;
+				z-index: 1;
+			}
 		}
 	}
 }

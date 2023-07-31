@@ -1,0 +1,106 @@
+@use "src/styles/colors";
+@use "src/styles/vars";
+
+.the-course-of-the-route-wrapper {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+
+	.the-course-of-the-route {
+		margin: 10px 0;
+		width: 100%;
+
+		h1 {
+			margin-left: 10px;
+			font-size: 20px;
+			padding: 5px 10px;
+			line-height: 24px;
+			border-left: 1px solid black;
+			@media screen and (min-width: map-get(vars.$breakpoints, "small")) {
+				margin-left: 5%;
+				padding: 10px 10px;
+				font-size: 28px;
+			}
+			@media screen and (min-width: map-get(vars.$breakpoints, "medium")) {
+				padding: 20px 10px;
+				font-size: 42px;
+			}
+		}
+		ul {
+			padding: 30px 0;
+			width: 100%;
+			display: grid;
+			grid-template-columns: 1fr 1fr;
+			gap: 10px;
+
+			@media screen and (min-width: map-get(vars.$breakpoints, "small")) {
+				padding: 40px 10px;
+				grid-template-columns: 1fr 1fr 1fr 1fr;
+			}
+			@media screen and (min-width: map-get(vars.$breakpoints, "medium")) {
+				padding: 50px 40px;
+				grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+				gap: 10px;
+			}
+			@media screen and (min-width: map-get(vars.$breakpoints, "xl")) {
+				padding: 60px 50px;
+				grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+				gap: 10px;
+			}
+
+			li {
+				padding-left: 1%;
+				display: flex;
+				align-items: center;
+				justify-content: flex-start;
+				align-self: center;
+				place-self: center stretch;
+				list-style: none;
+				font-weight: bold;
+				font-size: 14px;
+
+				@media screen and (min-width: map-get(vars.$breakpoints, "small")) {
+					padding-left: 15%;
+					font-size: 16px;
+				}
+				@media screen and (min-width: map-get(vars.$breakpoints, "medium")) {
+					padding-left: 20%;
+					font-size: 18px;
+				}
+				@media screen and (min-width: map-get(vars.$breakpoints, "xm")) {
+					font-size: 15px;
+				}
+				.i {
+					margin-right: 5px;
+
+					font-size: 14px;
+					@media screen and (min-width: map-get(vars.$breakpoints, "small")) {
+						font-size: 16px;
+					}
+					@media screen and (min-width: map-get(vars.$breakpoints, "medium")) {
+						font-size: 18px;
+					}
+					@media screen and (min-width: map-get(vars.$breakpoints, "xm")) {
+						font-size: 22px;
+					}
+				}
+			}
+		}
+	}
+	.the-course-of-the-route-map {
+		width: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+
+
+		img {
+			width: 100%;
+			object-fit: cover;
+			object-position: center;
+			@media screen and (min-width: map-get(vars.$breakpoints, "medium")) {
+				width: 70%;
+			}
+		}
+	}
+}

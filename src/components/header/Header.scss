@@ -12,6 +12,7 @@
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
+	
 	.bg-shadow {
 		position: absolute;
 		top: 0;
@@ -22,38 +23,40 @@
 		z-index: 0;
 	}
 	.text_wrapper {
-		// background-color: red;
+		
 		position: absolute;
 		top: 0;
 		right: 0;
 		bottom: 0;
 		left: 0;
-		padding: 10vh;
+		padding: 0 10px;
 		display: flex;
 		flex-direction: column;
 		align-items: center;
 		justify-content: flex-end;
-		align-content: flex-start;
 		color: whitesmoke;
 		z-index: 1;
 
-		@media screen and (min-width: map-get(vars.$breakpoints, "medium")) {
-		}
-
 		h1 {
 			position: absolute;
-			top: 15vh;
-			left: 30vw;
-			padding-right: 10px;
+			top: 2vh;
+			left: 50%;
+			width: 90vw;
+			transform: translateX(-50%);
+			padding-right: auto;
+			text-align: center;
 			font-size: 18px;
 			letter-spacing: 1.4px;
+			color: colors.$white-100;
+			// border: 1px solid red;
 			@media screen and (min-width: map-get(vars.$breakpoints, "small")) {
-				left: 40vw;
+				// width: auto;
 				font-size: 28px;
 			}
 			@media screen and (min-width: map-get(vars.$breakpoints, "medium")) {
-				top: 20vh;
-				left: 50vw;
+				top: 8vh;
+				left: 70%;
+				width: 65vw;
 				padding-right: 5vw;
 				font-size: 42px;
 			}
@@ -67,6 +70,87 @@
 				padding: 15px 25px;
 				font-size: 16px;
 				letter-spacing: 1.4px;
+			}
+		}
+		.header-contact {
+			margin-bottom: 0;
+			width: 100vw;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			@media screen and (min-width: map-get(vars.$breakpoints, "small")) {
+				align-items: flex-start;
+				margin-bottom: 20%;
+			}
+			@media screen and (min-width: map-get(vars.$breakpoints, "medium")) {
+				margin-bottom: 40px;
+			}
+			@media screen and (min-width: map-get(vars.$breakpoints, "xm")) {
+				margin-bottom: 50px;
+			}
+
+			.round {
+				margin-bottom: 5px;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				width: 40px;
+				height: 40px;
+				border-radius: 50%;
+				@media screen and (min-width: map-get(vars.$breakpoints, "medium")) {
+					width: 60px;
+					height: 60px;
+				}
+				@media screen and (min-width: map-get(vars.$breakpoints, "xm")) {
+					width: 80px;
+					height: 80px;
+				}
+				.i {
+					font-size: 20px;
+					@media screen and (min-width: map-get(vars.$breakpoints, "medium")) {
+						font-size: 28px;
+					}
+					@media screen and (min-width: map-get(vars.$breakpoints, "xm")) {
+						font-size: 32px;
+					}
+				}
+			}
+			.phone {
+				background: green;
+			}
+			.email {
+				background: royalblue;
+			}
+			.header-contact-media {
+				width: 100%;
+				padding: 10px 10px 10px 10%;
+				@media screen and (min-width: map-get(vars.$breakpoints, "small")) {
+					background: none;
+					width: auto;
+				}
+
+				a {
+					display: flex;
+					flex-direction: column;
+					align-items: center;
+					justify-content: flex-start;
+					text-decoration: none;
+					color: colors.$white-100;
+					@media screen and (min-width: map-get(vars.$breakpoints, "small")) {
+						flex-direction: row;
+					}
+					span {
+						padding: 0 0;
+						font-size: 16px;
+						padding: 0px 0;
+						background: none;
+						font-weight: bold;
+						@media screen and (min-width: map-get(vars.$breakpoints, "small")) {
+							padding: 10px 20px;
+							font-size: 22px;
+						}
+					}
+				}
 			}
 		}
 	}

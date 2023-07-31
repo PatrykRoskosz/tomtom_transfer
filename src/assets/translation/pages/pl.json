@@ -1,13 +1,13 @@
 {
 	"about_us": {
 		"title": "o nas",
-		"content": "Witamy w TomTom Transfer - profesjonalnej firmie transportowej, która specjalizuje się w bezpiecznych i komfortowych przewozach osób między Polską a Danią. Nasza firma została założona z pasji do podróżowania i zrozumienia, jak ważne jest zapewnienie nie tylko efektywnego, ale także przyjemnego doświadczenia podróży. Nasza flota nowoczesnych 9-osobowych busów jest wyposażona w najwyższej jakości udogodnienia, aby zapewnić naszym klientom najwyższy poziom wygody i komfortu w czasie podróży. Nasi doświadczeni i wykwalifikowani kierowcy są gotowi zapewnić Państwu bezpieczną i terminową podróż do celu.Jesteśmy dumni z naszego profesjonalnego podejścia do pracy oraz z zaangażowania w zapewnienie doskonałej obsługi klienta. Naszym celem jest zawsze zapewnienie pełnego zadowolenia naszych pasażerów, a nasza reputacja jako niezawodnego partnera transportowego jest dla nas najważniejsza.Nie wahaj się skontaktować z nami i zaplanować swoją podróż z TomTom Transfer. Daj nam szansę, abyśmy mogli pokazać, że podróżowanie może być nie tylko wygodne, ale także przyjemne!"
+		"content": "Witamy w TomTom Transfer - profesjonalnej firmie transportowej, która specjalizuje się w bezpiecznych i komfortowych przewozach osób między Polską a Danią. Nasza firma została założona z pasji do podróżowania i zrozumienia, jak ważne jest zapewnienie nie tylko efektywnego, ale także przyjemnego doświadczenia podróży. Nasza flota nowoczesnych 9-osobowych busów jest wyposażona w najwyższej jakości udogodnienia, aby zapewnić naszym klientom najwyższy poziom wygody i komfortu w czasie podróży. Nasi doświadczeni i wykwalifikowani kierowcy są gotowi zapewnić Państwu bezpieczną i terminową podróż do celu. Jesteśmy dumni z naszego profesjonalnego podejścia do pracy oraz z zaangażowania w zapewnienie doskonałej obsługi klienta. Naszym celem jest zawsze zapewnienie pełnego zadowolenia naszych pasażerów, a nasza reputacja jako niezawodnego partnera transportowego jest dla nas najważniejsza. Nie wahaj się skontaktować z nami i zaplanować swoją podróż z TomTom Transfer. Daj nam szansę, abyśmy mogli pokazać, że podróżowanie może być nie tylko wygodne, ale także przyjemne!"
 	},
 	"car_rental": {
 		"cars": {
 			"black_trafic": {
 				"name": "Renault Trafic",
-				"description": "Bus marki Renault Trafic, bardzo wygodny i przestrony. Jesto to auto idealne na dalekie podróze w większym gronie.",
+				"description": "Bus marki Renault Trafic, bardzo wygodny i przestrony. Jest to to auto idealne na dalekie podróże w większym gronie.",
 				"color": "czarny",
 				"air_conditioning": "tak",
 				"engine_type": "diesel",
@@ -17,7 +17,7 @@
 			},
 			"silver_trafic": {
 				"name": "Renault Trafic",
-				"description": "Bus marki Renault Trafic, bardzo wygodny i przestrony. Jesto to auto idealne na dalekie podróze w większym gronie.",
+				"description": "Bus marki Renault Trafic, bardzo wygodny i przestrony. Jest to to auto idealne na dalekie podróże w większym gronie.",
 				"color": "srebrny",
 				"air_conditioning": "tak",
 				"engine_type": "diesel",
@@ -27,7 +27,7 @@
 			},
 			"silver_vivaro": {
 				"name": "Opel Vivaro",
-				"description": "Bus marki Opel Vivaro, bardzo wygodny i przestrony. Jesto to auto idealne na dalekie podróze w większym gronie.",
+				"description": "Bus marki Opel Vivaro, bardzo wygodny i przestrony. Jest to to auto idealne na dalekie podróże w większym gronie.",
 				"color": "srebrny",
 				"air_conditioning": "tak",
 				"engine_type": "diesel",

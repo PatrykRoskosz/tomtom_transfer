@@ -11,8 +11,20 @@ body {
 	z-index: 0;
 	font-family: "Lato", sans-serif;
 	font-family: "Montserrat", sans-serif;
-	// overflow: hidden;
-	// min-height: 100%;
+
+	h1,
+	h2,
+	h3 {
+		font-family: "Cormorant Garamond", serif;
+	}
+
+	p,
+	span, a{
+		font-family: "Montserrat", sans-serif;
+	}
+	.header-logo {
+		font-family: "Lato", sans-serif;
+	}
 }
 .tomtom-hero-image {
 	position: absolute;

@@ -1,10 +1,11 @@
 {
 	"navigation": {
 		"home": "Strona główna",
-		"car_rental": "Wyporzyczalnia",
-		"trips_route": "Wyjazdy & Trasa",
-		"Transportation_of_events": "Transportowa obsługa eventów",
-		"contact": "Kontakt"
+		"car_rental": "Wypożyczalnia",
+		"trips_route": "Podróż",
+		"Transportation_of_events": "Wydarzenia",
+		"contact": "Kontakt",
+		"statute": "Regulamin"
 	},
 	"header": {
 		"title": "Bezpieczne podróże z Polski do Kopenhagi",
@@ -12,7 +13,7 @@
 	},
 	"welcome": {
 		"one": "Witajcie w",
-		"two": "Twóijm zaufany partner w przewozach międzynarodowych!"
+		"two": "Twój zaufany partner w przewozach międzynarodowych!"
 	},
 	"transport_offer": {
 		"one": {
@@ -51,11 +52,92 @@
 			"description": "Nasze usługi cechuje punktualność i rzetelność, dlatego możesz być pewien, że dotrzemy na miejsce na czas."
 		}
 	},
+	"why_choose_us_events": {
+		"one": {
+			"title": "Doświadczenie",
+			"description": "Jesteśmy ekspertami w branży transportowej z wieloletnim doświadczeniem."
+		},
+		"two": {
+			"title": "Indywidualne podejście",
+			"description": "Dbamy o każdy szczegół, dostosowując nasze usługi do unikalnych potrzeb i oczekiwań klientów."
+		},
+		"three": {
+			"title": "Flota pojazdów",
+			"description": "Nasze pojazdy to najwyższej klasy luksusowe auta, zapewniające komfortową i bezpieczną podróż."
+		},
+		"four": {
+			"title": "Profesjonalna obsługa",
+			"description": "Nasza ekipa kierowców i personelu zawsze dba o najwyższy poziom obsługi, by zapewnić pełne zadowolenie klientów."
+		}
+	},
+
 	"contact_us_today": {
 		"title": "Skontaktuj się z nami już dziś",
 		"description": "aby dowiedzieć się więcej o naszych usługach, cennikach oraz dostępności. Nasz zespół z przyjemnością odpowie na wszystkie Twoje pytania i pomoże zorganizować idealny przewóz dla Ciebie lub Twojej firmy.",
 		"one": "Wybierz",
 		"two": " i podróżuj z nami bezpiecznie i wygodnie!"
 	},
-	"buissness_description": "Jesteśmy dynamiczną i doświadczoną firmą transportową, skupioną na dostarczaniu niezawodnych usług przewozu osób oraz paczek z Polski do Danii. Nasza misja polega na zapewnieniu bezpiecznych, komfortowych i terminowych podróży które spełniają oczekiwania naszych Klientów w każdym calu."
+	"buissness_description": {
+		"text": "Jesteśmy dynamiczną i doświadczoną firmą transportową, skupioną na dostarczaniu niezawodnych usług przewozu osób oraz paczek z Polski do Danii. Nasza misja polega na zapewnieniu bezpiecznych, komfortowych i terminowych podróży, które spełniają oczekiwania naszych Klientów w każdym calu."
+	},
+	"offer_events_description": "Jesteśmy doświadczoną firmą specjalizującą się w kompleksowej obsłudze transportowej różnorodnych wydarzeń, takich jak wesela, osiemnastki, przyjęcia, wieczory kawalerskie i panieńskie. Ponadto, oferujemy wynajem luksusowego busa z doświadczonym kierowcą, transfery z lotniska oraz przewozy pracowników dla firm. Niezależnie od charakteru Twojego wydarzenia czy potrzeb transportowych, jesteśmy gotowi zapewnić wygodny, bezpieczny i niezapomniany przejazd.",
+	"offer_events": {
+		"one": {
+			"title": "Transport eventowy",
+			"text": "Planujesz swoje wymarzone wesele, osiemnastkę czy inne ważne wydarzenie? Pozwól nam zadbać o transport Twoich gości, abyście mogli skoncentrować się na radości i zabawie. Nasze eleganckie i komfortowe pojazdy zapewnią niezapomniane przeżycia każdemu uczestnikowi."
+		},
+		"two": {
+			"title": "Wynajem luksusowego busa",
+			"text": "Czy to wycieczka ze znajomymi, rodzinny wypad czy wieczór kawalerski czy panieński - nasz luksusowy bus z doświadczonym kierowcą jest doskonałym wyborem dla grupy, która pragnie podróżować wygodnie i bezpiecznie."
+		},
+		"three": {
+			"title": "Transfery z lotniska",
+			"text": "Dla gości przyjeżdżających z odległych miejsc oferujemy profesjonalne transfery z lotniska, które zapewnią im komfortową podróż od samego początku."
+		},
+		"four": {
+			"title": "Przewozy pracowników dla firm",
+			"text": "Zadbaj o swoich pracowników, zapewniając im wygodny i bezproblemowy transport do miejsca pracy. Nasze usługi przewozowe dla firm pomogą zwiększyć komfort i efektywność pracowników."
+		},
+		"five": {
+			"title": "Obsługa wydarzeń biznesowych",
+			"text": "Organizujesz konferencję, szkolenie czy spotkanie biznesowe? Nasza firma zapewni sprawny transport dla uczestników, co pozwoli im skoncentrować się na samej istocie wydarzenia."
+		}
+	},
+	"rental_car-text": "Jesteśmy profesjonalną wypożyczalnią pojazdów, która oferuje komfortowe i przestronne busy 9-osobowe do wynajęcia. Bez względu na okazję, nasze pojazdy są idealnym rozwiązaniem dla grup, które chcą podróżować razem w komfortowy sposób.",
+	"why-work-wit-us": {
+		"title": "Dlaczego my",
+		"satisfied_customers": "Zadowolonych klientów",
+		"years_of_experience": "Lat Doświadczenia",
+		"thousands_of_kilometers_traveled": "Tysiecy przejechanych kilometrów",
+		"number_of_trips_made": "Odbytych przejazdów"
+	},
+	"our_offer": {
+		"title": "Nasza oferta",
+		"transport_of_people": "Transport osób",
+		"event_handling": "Obsługa wydarzeń",
+		"shipments": "Przesyłki",
+		"car_rental": "Wypożyczalnia samochodów",
+		"details": "SZCZEGÓŁY"
+	},
+	"phone": "Telefon",
+	"departure_map": {
+		"title": "Nasza trasa"
+	},
+	"table": {
+		"departure": "Wyjazd",
+		"poland": "Polska",
+		"denmark": "Dania",
+		"monday":"Poniedziałek",
+		"tuesday": "Wtorek",
+		"wednesday": "Środa",
+		"thursday": "Czwartek",
+		"friday": "Piątek",
+		"saturday":"Sobota",
+		"sunday":"Niedziela"
+	},
+	"event_header": {
+		"one": "Witamy w",
+		"two": "Twój zaufany partner w organizacji wydarzeń!"
+
+	}
 }
