@@ -26,24 +26,25 @@ export interface WhyChooseUsType {
 
 const WhyChooseUs: React.FC<WhyChooseUsType> = ({ itemList }) => {
 	const { t } = i18n;
-console.log(itemList);
-	console.log("typ:", typeof FaTruckFast);
+
 	return (
 		<section className='why-choose-us'>
 			<div className='why-choose-us-question'>
 				<p>{t("components:why_choose_us.title")}</p>
-				<h3>TomTom - Transfer</h3>
+				<h3 className='header-logo'>TomTom - Transfer</h3>
 			</div>
 			<div className='why-choose-us-justification'>
 				{itemList ? (
 					<>
 						{itemList?.map((item, index) => {
-							return (<WhyChooseUsItem
-								key={index}
-								icon={item.icon}
-								span={item.span}
-								paragraph={item.paragraph}
-							/>)
+							return (
+								<WhyChooseUsItem
+									key={index}
+									icon={item.icon}
+									span={item.span}
+									paragraph={item.paragraph}
+								/>
+							);
 						})}
 					</>
 				) : (

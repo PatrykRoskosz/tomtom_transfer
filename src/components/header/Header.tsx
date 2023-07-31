@@ -11,10 +11,6 @@ const Header: React.FC = () => {
 
 	return (
 		<>
-			{/* <Logo /> */}
-			{/* {location.pathname !== "/event-service" && (
-				
-			)} */}
 			<header className='header'>
 					<div className='text_wrapper'>
 						<h1>{t("components:header.title")}</h1>

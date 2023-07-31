@@ -8,7 +8,7 @@ const HeaderEvent = () => {
 		<div className='header-event'>
 			<div className='header-event-text'>
 				<h2>
-					{t("components:event_header.one")} <br/><span>TomTomTransfer</span>
+					{t("components:event_header.one")} <br/><span className="header-logo">TomTom - Transfer</span>
 				</h2>
 				<p>{t("components:event_header.two")}</p>
 			</div>

@@ -41,19 +41,27 @@ const DepartureMap = () => {
 					</li>
 					<li>
 						<FaLocationDot className='i red' />
+						Bydgoszcz
+					</li>
+					<li>
+						<FaLocationDot className='i red' />
+						Inowrocław
+					</li>
+					<li>
+						<FaLocationDot className='i red' />
+						Gniezno
+					</li>
+					<li>
+						<FaLocationDot className='i red' />
 						Poznań
 					</li>
 					<li>
 						<FaLocationDot className='i red' />
-						Świepodzin
+						Świebodzin
 					</li>
 					<li>
 						<FaLocationDot className='i red' />
-						Gorzów
-					</li>
-					<li>
-						<FaLocationDot className='i red' />
-						Renice
+						Gorzów Wielkopolski
 					</li>
 					<li>
 						<FaLocationDot className='i red' />
@@ -65,7 +73,7 @@ const DepartureMap = () => {
 					</li>
 					<li>
 						<FaLocationDot className='i red' />
-						Copenhagen
+						Kopenhaga
 					</li>
 				</ul>
 			</div>

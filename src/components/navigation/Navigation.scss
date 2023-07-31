@@ -63,7 +63,7 @@
 				z-index: 10000;
 
 				&:hover {
-					color: colors.$primary-100;
+					color: colors.$primary-300;
 				}
 				&.active {
 					font-size: 20px;
@@ -89,8 +89,8 @@
 		
 			}
 			&:hover {
-				color: colors.$primary-100;
-				border: 1px solid colors.$primary-100;
+				color: colors.$primary-300;
+				border: 1px solid colors.$primary-300;
 				transform: scale(1.1);
 			}
 		}

@@ -10,7 +10,6 @@ const RootLoyout = () => {
 	return (
 		<>
 			<Logo />
-			{/* <Header /> */}
 			<Navigation />
 			<Component.BurgerButton />
 			<Wrapper>
